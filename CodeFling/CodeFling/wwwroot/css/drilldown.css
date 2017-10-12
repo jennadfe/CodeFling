@@ -1,0 +1,3937 @@
+.drilldowncontainer {
+    border: 1px solid #666;
+    position: relative;
+    height: 422px
+}
+
+.content.drilldown {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 12px;
+    padding-left: 12px
+}
+
+#seemorerhs a {
+    display: block;
+    margin: 0 auto;
+    width: 237px;
+    height: 218px
+}
+
+.drilldowncontainer #map {
+    float: left;
+    position: relative
+}
+
+    .drilldowncontainer #map .mapimg {
+        position: absolute
+    }
+
+    .drilldowncontainer #map .areamap {
+        visibility: hidden;
+        position: absolute;
+        z-index: 0
+    }
+
+#mapcontainer {
+    width: 416px;
+    height: 420px;
+    overflow: hidden;
+    float: left;
+    position: relative
+}
+
+    #mapcontainer #map img {
+        position: absolute;
+        width: 256px;
+        height: 256px;
+        float: left
+    }
+
+.featuredNearbyRegions {
+    margin-bottom: 1em
+}
+
+    .featuredNearbyRegions ul {
+        float: left
+    }
+
+    .featuredNearbyRegions li {
+        list-style-type: none
+    }
+
+.featuredPropertyIn {
+    width: 28%
+}
+
+.featuredHousesForSaleIn {
+    width: 32%
+}
+
+.featuredFlatsToRentIn {
+    width: 30%
+}
+
+.drilldowncontainer .maplabelpopup {
+    position: absolute;
+    z-index: 1;
+    font-size: 89%
+}
+
+.drilldowncontainer .label {
+    background: #343d4e url(/ps/images17250/drilldownmaps/images/bg-popup-title.png) left top no-repeat;
+    color: #fff;
+    margin: 0;
+    padding: 0 .4em;
+    border: 1px solid #fff;
+    text-decoration: none;
+    white-space: nowrap
+}
+
+.drilldowncontainer a:hover.label {
+    border: 1px solid #525963
+}
+
+.drilldowncontainer span:hover.label {
+    border: 1px solid #525963
+}
+
+.drilldowncontainer .maplabelpopup .popup {
+    display: none;
+    z-index: 2;
+    background: url('../images/drilldownmenuline.gif') left top no-repeat;
+    padding-top: 6px;
+    white-space: nowrap
+}
+
+.drilldowncontainer .maplabelpopup .popuptier2 {
+    width: 170px
+}
+
+.drilldowncontainer .maplabelpopup .popup ol {
+    list-style-type: none;
+    margin: 0;
+    border-color: #525963;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    background-color: #fff
+}
+
+    .drilldowncontainer .maplabelpopup .popup ol li a {
+        display: block;
+        line-height: 16px;
+        padding: 0 5px 3px
+    }
+
+.drilldowncontainer .disclaimer {
+    color: #dcdcdc;
+    margin-left: 180px
+}
+
+.drilldowncontainer ul.sidemenu {
+    padding: 0;
+    margin: 0;
+    line-height: 1.6em;
+    list-style-type: none;
+    height: 420px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border-left: 1px solid #999;
+    float: right;
+    position: relative;
+    width: 242px
+}
+
+    .drilldowncontainer ul.sidemenu li {
+        border-bottom: 1px solid #ddd;
+        margin-left: 0;
+        background: #FFF
+    }
+
+        .drilldowncontainer ul.sidemenu li h2 {
+            padding: .6em 0 .3em .9em;
+            font-size: 120%
+        }
+
+        .drilldowncontainer ul.sidemenu li a.head, .drilldowncontainer ul.sidemenu li.area {
+            padding: .5em 0 .5em 1.5em;
+            display: block
+        }
+
+        .drilldowncontainer ul.sidemenu li.area {
+            color: #FFF;
+            background: #343d4e;
+            font-weight: bold
+        }
+
+            .drilldowncontainer ul.sidemenu li.area a {
+                color: #fff
+            }
+
+                .drilldowncontainer ul.sidemenu li.area a:hover {
+                    background-color: transparent;
+                    color: #ddd;
+                    text-decoration: none
+                }
+
+    .drilldowncontainer ul.sidemenu a.opened {
+        border-bottom: 1px solid #ddd;
+        background: #f7f7f7 url(/ps/images17250/drilldownmaps/images/ha-down.gif) 95% 50% no-repeat
+    }
+
+    .drilldowncontainer ul.sidemenu a.closed {
+        background: url('../images/ha-side.gif') 95% 50% no-repeat;
+        border-bottom: 0
+    }
+
+    .drilldowncontainer ul.sidemenu li span.head, .drilldowncontainer ul.sidemenu li.area {
+        padding: .5em 0 .5em 1.5em;
+        display: block
+    }
+
+        .drilldowncontainer ul.sidemenu li.area span {
+            color: #fff
+        }
+
+            .drilldowncontainer ul.sidemenu li.area span:hover {
+                background-color: transparent;
+                color: #ddd;
+                text-decoration: none
+            }
+
+    .drilldowncontainer ul.sidemenu span.opened {
+        border-bottom: 1px solid #ddd;
+        background: #f7f7f7 url(/ps/images17250/drilldownmaps/images/ha-down.gif) 95% 50% no-repeat
+    }
+
+    .drilldowncontainer ul.sidemenu span.closed {
+        background: url('../images/ha-side.gif') 95% 50% no-repeat;
+        border-bottom: 0
+    }
+
+#majortowndrilldown {
+    margin-bottom: 1em
+}
+
+.drilldowncontainer ul.sidemenu ul.sublinks {
+    margin: 0 0 0 .3em;
+    padding-bottom: .3em
+}
+
+    .drilldowncontainer ul.sidemenu ul.sublinks li a {
+        margin-left: 2.5em
+    }
+
+    .drilldowncontainer ul.sidemenu ul.sublinks li {
+        border-bottom-width: 0;
+        list-style-type: none
+    }
+
+.drilldowncontainer ul.sidemenu a.head:hover, .drilldowncontainer ul.sidemenu a.head:active {
+    background-color: #f7f7f7
+}
+
+.drilldowncontainer ul.sidemenu span.head:hover, .drilldowncontainer ul.sidemenu span.head:active {
+    background-color: #f7f7f7
+}
+
+.drilldowncontainer.finaltier ul.sidemenu li.area {
+    padding-left: .5em
+}
+
+.drilldowncontainer ul.sidemenu li.indented {
+    background: #FFF;
+    border-bottom-width: 0;
+    list-style-type: none
+}
+
+.drilldowncontainer ul.sidemenu li.last {
+    border-top: 1px solid #ddd
+}
+
+.drilldowncontainer ul.sidemenu li.indented a.head {
+    padding-left: 2.3em
+}
+
+.drilldowncontainer ul.sidemenu li.indented span.head {
+    padding-left: 2.3em
+}
+
+ol.regiondrilldown {
+    padding: 0;
+    margin: 0
+}
+
+    ol.regiondrilldown li {
+        list-style-type: none
+    }
+
+    ol.regiondrilldown ul {
+        margin: 1em 0;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 1em
+    }
+
+    ol.regiondrilldown.column {
+        float: left;
+        width: 49.9%
+    }
+
+.regiontitle h2 {
+    font-size: 136%
+}
+
+.regiontitle h2 {
+    padding-top: 1em
+}
+
+    .regiontitle h2:first-child {
+        padding-top: 0
+    }
+
+ol.regionStaticInfo ul {
+    margin: 12px 0 0 1em;
+    padding: 0 0 .5em 0
+}
+
+ol.regionStaticInfo li {
+    list-style-type: disc;
+    padding: 0 0 .3em .3em
+}
+
+ul.regionindexalphabet {
+    padding: 0;
+    line-height: 1.6em;
+    list-style-type: none;
+    color: #666;
+    margin: .75em 0
+}
+
+    ul.regionindexalphabet li {
+        padding: 0 2px;
+        border-left: 1px solid #CCC;
+        display: inline;
+        margin: 0
+    }
+
+        ul.regionindexalphabet li.first {
+            border-left: none
+        }
+
+    ul.regionindexalphabet a {
+        width: 100%;
+        color: #666
+    }
+
+        ul.regionindexalphabet a:hover {
+            color: #FFF;
+            background: #666
+        }
+
+.regionindex {
+    position: relative;
+    top: -20px
+}
+
+    .regionindex h4.majortowns h4 {
+        clear: both;
+        font-size: 120%
+    }
+
+    .regionindex h4 a {
+        color: #000;
+        text-decoration: none;
+        width: 50%;
+        float: left;
+        margin-top: 15px
+    }
+
+        .regionindex h4 a:hover, .majortowns h4 a:hover {
+            color: #FFF;
+            background-color: #000
+        }
+
+    .regionindex ul {
+        margin: 0 0 2em 0;
+        list-style-type: none
+    }
+
+        .regionindex ul a {
+            width: 50%;
+            float: left
+        }
+
+    .regionindex li {
+        width: 49%;
+        float: left
+    }
+
+.majortowns {
+    width: 49%;
+    float: left;
+    list-style-type: none;
+    margin: 0
+}
+
+    .majortowns h4 a {
+        color: #000;
+        text-decoration: none
+    }
+
+    .majortowns li ul {
+        padding-bottom: 1em;
+        list-style-type: none;
+        margin: 0
+    }
+
+h3.heading {
+    border: 0;
+    margin-bottom: .8em
+}
+
+h3.reedlogo img {
+    vertical-align: bottom
+}
+
+h3.reedlogo a#LondonReedLink {
+    margin-left: 62px;
+    font-size: 90%
+}
+
+#jobsSection li {
+    padding: 6px 0;
+    border-top: 1px dotted #ddd
+}
+
+    #jobsSection li a {
+        font-weight: bold
+    }
+
+#jobsSection {
+    max-height: 400px;
+    list-style-type: none;
+    margin-left: .5em;
+    overflow: auto
+}
+
+#jobsarea {
+    display: none
+}
+
+img.drilldownpolaroid {
+    float: left;
+    padding: 0 2em 2em 0
+}
+
+.homepage .content p {
+    margin-bottom: 0
+}
+
+.homepagefix {
+    position: static
+}
+
+.homepage .singlecontent, .landingpage .singlecontent {
+    width: auto;
+    float: none
+}
+
+.homepage .primarycontent {
+    width: 36%;
+    background: url(/ps/images17250/icons/bg-columns.gif) 100% 0 repeat-y
+}
+
+.homepage .secondarycontent {
+    width: 36%
+}
+
+    .homepage .secondarycontent .content {
+        margin-right: 7px
+    }
+
+#pagewrapper.homepage #pagecontent {
+    border-top: 0;
+    border-bottom: 0;
+    padding-top: 0
+}
+
+#pagewrapper .content.branch {
+    background: #289728
+}
+
+#pagewrapper.homepage .primarycontent, #pagewrapper.homepage .secondarycontent, #pagewrapper.homepage .tertiarycontent {
+    width: 33.3%
+}
+
+.branchSearch .inputset select {
+    background-color: #fff;
+    vertical-align: middle;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 28px;
+    line-height: 28px
+}
+
+img.homeimage {
+    float: left;
+    padding: 3px;
+    margin-right: 1.7em
+}
+
+    img.homeimage.letting {
+        float: right;
+        margin-left: 1.7em
+    }
+
+img.alternative {
+    float: right;
+    margin: 0 0 0 1em
+}
+
+.newhomesmagazine {
+    width: 245px;
+    text-align: center
+}
+
+img.space {
+    padding-bottom: 8px
+}
+
+.content p.agentpage {
+    color: #390;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 1.1em
+}
+
+img.commercialimageborder {
+    padding: 4px
+}
+
+#sellerschannel {
+    float: left;
+    width: 35%;
+    margin: 2em 1em 1em 2em
+}
+
+    #sellerschannel .content {
+        padding: 2em 1.3em 2em 1.5em
+    }
+
+    #sellerschannel h3 {
+        font-size: 1.9em;
+        font-weight: normal;
+        color: #666
+    }
+
+    #sellerschannel h4 {
+        font-size: 1.5em;
+        font-weight: normal
+    }
+
+    #sellerschannel p {
+        color: #666;
+        font-size: 120%;
+        font-weight: normal;
+        padding-bottom: 1.4em
+    }
+
+    #sellerschannel a {
+        background: url(/ps/images17250/landingpages/premiumDisplay/sellerschannelbtnbg.gif) no-repeat;
+        color: #fff;
+        font-size: 1.2em;
+        padding: 1em 1.8em 2em;
+        font-weight: bold;
+        text-decoration: underline
+    }
+
+        #sellerschannel a:hover {
+            text-decoration: none
+        }
+
+body.landingpage div#searchheader #sellerschannel a.keywords {
+    color: #f18e00;
+    background: 0;
+    padding: 0;
+    font-size: 1em
+}
+
+.fieldhint {
+    color: #999
+}
+
+div#searchheadersellers div#searchheader h2 {
+    color: #2b4b8e;
+    font-size: 170%;
+    font-weight: normal;
+    padding-bottom: 1em
+}
+
+div#searchheadersellers div#searchheader label {
+    font-size: 110%;
+    padding-top: .3em
+}
+
+div#searchheadersellers div#searchheader input.searchBox, #drilldowncountry input.searchBox {
+    width: 40%
+}
+
+body.landingpage div#searchheadersellers div#searchheader p.propertySearchExample {
+    padding-left: 0
+}
+
+#featurestrip {
+    border: 1px solid #ffe9bf;
+    background-color: #fff7e8;
+    margin: 7px 7px 0 7px;
+    position: relative
+}
+
+    #featurestrip p {
+        color: #fc8504;
+        font-weight: bold;
+        margin: .42em .42em .42em 8em
+    }
+
+    #featurestrip img {
+        position: absolute;
+        left: -3px;
+        top: -5px;
+        z-index: 5
+    }
+
+    #featurestrip a {
+        color: #aa5d09
+    }
+
+        #featurestrip a:hover {
+            color: #fff;
+            background-color: #fc8504
+        }
+
+#searchheaderpromolink:hover, #searchheaderpromolink:active {
+    background-color: transparent
+}
+
+#searchheaderpromolink img {
+    bottom: 5px;
+    position: absolute;
+    right: 0
+}
+
+div#searchheader.branches {
+    height: auto;
+    background: #289728
+}
+
+div#aboutrightmove {
+    background-image: none
+}
+
+div#propertydeals {
+    background-image: none
+}
+
+div#students {
+    background: #005b9a url(/ps/images17250/landingpages/students/studentheading.jpg) 100% 100% no-repeat
+}
+
+div#searchheader h1, div.landingpages h1, #drilldowncountry h1 {
+    font-family: Arial,sans-serif;
+    padding-bottom: .2em;
+    color: #fff
+}
+
+div.landingpages h1 {
+    padding: 1.8em 0 0 1em
+}
+
+div.landingpages h3 {
+    padding: .2em 0 0 1.1em;
+    border-bottom: 0;
+    color: #fff;
+    font-size: 152%;
+    font-weight: normal
+}
+
+div.myrightmove h2 {
+    text-decoration: underline;
+    font-size: 120%
+}
+
+.homepage div#searchheader input.searchBox {
+    width: 46%
+}
+
+.homepage #searchheader {
+    height: 239px
+}
+
+div#searchheader label, #drilldowncountry label {
+    font-size: 152%;
+    line-height: 1.3em;
+    padding: 0 .4em 0 0;
+    height: 1.2em
+}
+
+div#searchheader input.searchBox, #drilldowncountry input.searchBox {
+    width: 40%;
+    font-size: 165%;
+    margin-right: .3em
+}
+
+#sellersPriceGuide div#searchheader input.searchBox, #sellersPriceGuide div#searchheader label {
+    float: left
+}
+
+#sellersarea div#searchheader #marketTrendsSearchCriteria label {
+    float: left
+}
+
+#sellersarea div#searchheader input.searchBox, #sellersPriceGuide div#searchheader label {
+    float: left
+}
+
+div#searchheader button, #drilldowncountry button {
+    padding: 0 .3em;
+    height: 1.8em
+}
+
+div#searchheader p.propertySearchExample, #drilldowncountry p.propertySearchExample {
+    padding-left: 13.5em;
+    font-weight: bold;
+    font-size: 85%;
+    clear: both
+}
+
+#drilldowncountry p.propertySearchExample {
+    padding-left: 14.5em
+}
+
+body.landingpage div#searchheader #housePricesSearch p.propertySearchExample {
+    padding-left: 22em
+}
+
+body.landingpage div#searchheader #housePricesSearchCriteria p.propertySearchExample, body.landingpage div#searchheader #housePricesSearchCriteria #searchLocationError {
+    padding-left: 240px
+}
+
+body.landingpage div#searchheader #housePricesSearchCriteria #searchLocationError {
+    margin-left: 0
+}
+
+div#searchheader p.propertySearchPrices {
+    padding-left: 15em;
+    font-weight: bold;
+    font-size: 85%;
+    clear: both
+}
+
+div#searchheader input#submit, div#searchheader input.submit, #drilldowncountry input.submit {
+    margin: 0 0 0 .4em;
+    float: left
+}
+
+.homepage div#searchheader input#submit {
+    border: 1px solid #333
+}
+
+.clearnone {
+    clear: none
+}
+
+#searchheader.commercial {
+    position: relative
+}
+
+#commSearchHeaderPic {
+    width: 937px;
+    background: url(/ps/images17250/commercial/landing-page_G_TOP.jpg) 0 -1px no-repeat scroll transparent
+}
+
+body.landingpage #searchheader.commercial p.propertySearchExample {
+    padding-left: 25.2em;
+    color: #DDD
+}
+
+.commercialchannels {
+    background: #f8f5f5;
+    border: 1px solid #dedede;
+    padding: 1em 0 1em 1em;
+    position: absolute;
+    right: 15px;
+    top: 30px;
+    width: 180px
+}
+
+    .commercialchannels strong {
+        border-bottom: 1px solid #efeded;
+        color: #2b4b8e;
+        display: block;
+        font-size: 1.3em;
+        margin: 0 1em 5px 0;
+        padding: 0 0 5px
+    }
+
+    .commercialchannels p {
+        font-size: 1.1em;
+        margin: 0 1em 0 0;
+        white-space: nowrap
+    }
+
+.commercialinline {
+    display: inline
+}
+
+body.landingpage #searchheader.commercial {
+    background: #f7f7f7
+}
+
+#commercialHomepage {
+    border: 1px solid #ddd;
+    width: 625px;
+    height: 349px;
+    padding-bottom: 20px
+}
+
+    #commercialHomepage h2 {
+        border-bottom: 0 none;
+        font-size: 155%
+    }
+
+#commercialPrimaryText {
+    width: 100%;
+    float: left
+}
+
+#commercialH3 {
+    border-bottom: 1px solid #ccc
+}
+
+#commercialH3Title {
+    border-bottom: 0;
+    font-size: 125%;
+    padding: 10px 5px 10px 2px
+}
+
+#commercialPanel2Img {
+    width: 93px;
+    height: 139px;
+    border: 0
+}
+
+#commercialPanel2Text {
+    width: 295px;
+    float: left;
+    padding-right: 7px
+}
+
+#commercialVr {
+    border-left: 1px solid #CCC;
+    height: 135px;
+    float: left;
+    padding: 4px
+}
+
+#commercialPanel2SubPanel2Header {
+    font-family: Arial,Geneva,sans-serif;
+    color: #333;
+    word-spacing: -0.03em;
+    font-weight: bold;
+    font-size: 110%;
+    padding-bottom: 10px
+}
+
+#commercialClickHere {
+    padding-top: 15px
+}
+
+#commercialBackgroundHeader {
+    background: none repeat scroll 0 0 #fff
+}
+
+#commercialpagecontent {
+    width: 980px;
+    margin-top: 10px
+}
+
+.commercialPrimaryContent {
+    width: 647px;
+    margin-right: 10px
+}
+
+.commercialSecondaryContent {
+    width: 28.5%;
+    float: left;
+    margin-top: -7px
+}
+
+.commkeywords {
+    color: #fff
+}
+
+body.landingpage div#searchheader h1.commercialHomepageText {
+    color: #fff
+}
+
+body.landingpage div#searchheader label.commercialHomepageText {
+    color: #fff
+}
+
+body.landingpage div#commSearchHeaderPic h1.commercialHomepageText {
+    color: #fff;
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 12px
+}
+
+body.landingpage div#commSearchHeaderPic label.commercialHomepageText {
+    color: #fff
+}
+
+body.landingpage.homepage div#commSearchHeaderPic form {
+    width: 715px
+}
+
+body.landingpage div#commSearchHeaderPic form {
+    width: 790px
+}
+
+body.landingpage div#commSearchHeaderPic h1 {
+    color: #2b4b8e;
+    font-size: 200%
+}
+
+body.landingpage div#commSearchHeaderPic .keywords {
+    color: #00801b
+}
+
+body.landingpage div#commSearchHeaderPic label {
+    color: #2b4b8e;
+    font-size: 168%
+}
+
+body.landingpage div#commSearchHeaderPic p.propertySearchExample {
+    color: #DDD;
+    padding-left: 25.2em
+}
+
+body.landingpage div#commSearchHeaderPic input.submit {
+    border-bottom-color: #CCC
+}
+
+body.landingpage div#commSearchHeaderPic input.searchBox {
+    font-size: 168%
+}
+
+body.compact div#commSearchHeaderPic {
+    margin-top: 15px;
+    border-top: 1px solid #ccc;
+    padding: 1em 0 1em 0
+}
+
+div#commSearchHeaderPic fieldset {
+    padding: 1em 0 0 1.5em
+}
+
+div#commSearchHeaderPic label {
+    font-size: 152%;
+    line-height: 1.3em;
+    float: left;
+    padding: 0 .4em 0 0;
+    height: 1.2em
+}
+
+div#commSearchHeaderPic p.propertySearchExample {
+    padding-left: 13.5em;
+    font-weight: bold;
+    font-size: 85%;
+    clear: both;
+    margin-bottom: 3em
+}
+
+div#commSearchHeaderPic input.searchBox {
+    width: 35%;
+    font-size: 165%;
+    float: left;
+    margin-right: .3em
+}
+
+.studentGuide h2 {
+    font-size: 1.5em;
+    font-weight: normal
+}
+
+.studentGuide h3 {
+    border: 0
+}
+
+.studentGuide #primarycontent ul {
+    margin-bottom: 1em
+}
+
+    .studentGuide #primarycontent ul li {
+        margin-top: .7em
+    }
+
+.studentGuide li span.listheading {
+    font-weight: bold;
+    font-size: 1.1em
+}
+
+div#propertyguides {
+    background: #00aba8 url(/ps/images17250/landingpages/propertyGuides/bg.searchheader-turquoise.gif) bottom left repeat-x;
+    overflow: hidden;
+    position: relative;
+    color: #FFF;
+    height: 10em;
+    margin: 0 10px
+}
+
+#pagebanner {
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 100%
+}
+
+    #pagebanner.home {
+        background-image: url("/ps/images17250/landingpages/propertyGuides/guideheader.jpg")
+    }
+
+    #pagebanner.buying {
+        background-image: url("/ps/images17250/landingpages/propertyGuides/buyingguides/buyingheader.jpg")
+    }
+
+    #pagebanner.selling {
+        background-image: url("/ps/images17250/landingpages/propertyGuides/sellingguides/sellinguideheader.jpg")
+    }
+
+    #pagebanner.renting {
+        background-image: url("/ps/images17250/landingpages/propertyGuides/rentingguides/renting-searchheader.gif")
+    }
+
+    #pagebanner.letting {
+        background-image: url("/ps/images17250/landingpages/propertyGuides/lettingguides/letting-searchheader.gif")
+    }
+
+div#aboutrightmove {
+    background: #005b9a url(/ps/images17250/landingpages/about/bg-searchheader-blue.gif) bottom left repeat-x;
+    height: 10em
+}
+
+    div#aboutrightmove #pagebanner {
+        background-image: url(/ps/images17250/landingpages/about/bg-billboard-aboutus.jpg);
+        height: 9.86em
+    }
+
+#scottishregions ul {
+    margin-bottom: 1em
+}
+
+#featurestrip p.drilldowns {
+    font-weight: bold;
+    margin: .42em
+}
+
+h2.tipheading {
+    text-transform: uppercase;
+    font-size: 114%;
+    font-weight: bold;
+    border: 0;
+    padding-top: .5em;
+    color: #579b98
+}
+
+img.polaroid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5
+}
+
+img.polaroidphoto {
+    float: left;
+    padding: 15px 0 50px 25px
+}
+
+ul.drilldown {
+    color: #000;
+    line-height: 1.6em;
+    list-style-type: disc;
+    margin-right: 0;
+    padding: 0;
+    margin-left: 188px
+}
+
+.drilldowncontentleft {
+    float: left;
+    width: 47%;
+    position: relative
+}
+
+.drilldowncontentright {
+    float: right;
+    width: 49%;
+    position: relative
+}
+
+.drilldowncontentholder {
+    padding: 10px
+}
+
+.drilldowncontentholdernoborder {
+    background-image: none;
+    background-color: #fff;
+    padding: 10px
+}
+
+body.narrow .drilldowncontentright, body.narrow .drilldowncontentleft {
+    float: none;
+    clear: both;
+    width: 100%;
+    background: #fff url(/ps/images17250/landingpages/separator.gif) no-repeat scroll center bottom;
+    padding-top: 15px
+}
+
+body.narrow .drilldowncontentlast {
+    background-image: none
+}
+
+body.narrow img.polaroid {
+    top: 5px
+}
+
+body.narrow img.polaroidphoto {
+    padding-top: 5px
+}
+
+body.narrow .drilldowncontentholder {
+    height: auto;
+    background-color: #fff;
+    background-image: none;
+    padding: 0 10px 0 10px
+}
+
+.drilldowncontentleft p, .drilldowncontentnoborderleft p, .drilldowncontentright p, .drilldowncontentnoborderright p {
+    width: auto;
+    margin-left: 175px
+}
+
+.regioncontent {
+    border-top: 7px solid #ddd;
+    background: #fff
+}
+
+.drilldowntext .regioncontent {
+    border-top: 0;
+    background: 0
+}
+
+.popularlocations {
+    padding: 0 5px;
+    float: left;
+    width: 665px;
+    padding-bottom: 1.5em;
+    margin-top: -6px
+}
+
+.moresearchoptions {
+    overflow: hidden
+}
+
+#tubeandrailmappromobox {
+    background-color: #ecf3fb;
+    margin: 0 0 10px 170px;
+    padding: .3em 0 .3em .3em;
+    border: 1px solid #d2e8ff;
+    font-weight: bold
+}
+
+img.tubeandtrain {
+    position: relative;
+    float: left;
+    vertical-align: middle;
+    padding-right: 4px
+}
+
+div#drilldowncountry {
+    background: transparent;
+    color: #FFF;
+    height: 10.2em;
+    position: relative;
+    margin: 0 10px
+}
+
+    div#drilldowncountry.scotlanddrilldown #searchheaderpic {
+        background: transparent url(/ps/images17250/landingpages/scotland/searchheader-scotland-new.jpg) no-repeat scroll right bottom;
+        height: 10em
+    }
+
+    div#drilldowncountry.londondrilldown #searchheaderpic {
+        background: transparent url(/ps/images17250/landingpages/london/searchheader-london-new.jpg) no-repeat scroll right bottom;
+        height: 10em
+    }
+
+#homepage #searchheaderpic {
+    position: relative;
+    top: 3.6em;
+    left: 15px;
+    background: #fff;
+    box-shadow: 1px 1px 4px #999;
+    width: 752px;
+    padding: 0;
+    margin: 0 auto;
+    z-index: 1
+}
+
+    #homepage #searchheaderpic.channel-switch {
+        margin: 0 auto;
+        top: 28px;
+        left: 15px;
+        width: 740px
+    }
+
+body.landingpage .primarycontent .content {
+    padding: 10px
+}
+
+body.landingpage .primarycontent {
+    background: transparent
+}
+
+body.homepage .primarycontent {
+    width: 36%
+}
+
+body.landingpage .secondarycontent .content, body.homepage .tertiarycontent .content {
+    margin-top: 7px
+}
+
+body.homepage .content {
+    line-height: 1.6em
+}
+
+body.homepage .keylink {
+    font-weight: bold
+}
+
+.landingpage #searchheaderpic {
+    background: #efefef;
+    margin-top: -1px;
+    border-top: 1px solid #ccc;
+    padding: 2.5em 0 2em 2.5em
+}
+
+.landingpage .commercial #searchheaderpic {
+    background: #f7f7f7;
+    padding: 1em 0 2.1em 0
+}
+
+#drilldowncountry #searchheaderpic form {
+    padding: 1.6em 0 0 2.5em
+}
+
+body.homepage div#searchheader.door {
+    background: url(/ps/images17250/campaigns/Happy_Yellow_hero.jpg) 0 -1px no-repeat;
+    border: 0
+}
+
+body.homepage div#searchheader form {
+    width: 682px;
+    padding: 11px 35px
+}
+
+body.homepage div#searchheader .channel-switch form {
+    background: #fff;
+    width: auto;
+    padding: 11px 30px 0;
+    min-height: 166px
+}
+
+body.landingpage div#searchheader h1 {
+    color: #2b4b8e;
+    font-size: 200%
+}
+
+body.landingpage div#searchheader .keywords {
+    color: #00801b
+}
+
+body.landingpage div#searchheader label {
+    color: #2b4b8e;
+    font-size: 168%
+}
+
+#homepage div#searchheader label {
+    clear: left;
+    float: left;
+    position: relative;
+    top: 9px;
+    widtH: 150px
+}
+
+body.landingpage div#searchheader input.searchbox {
+    font-size: 168%
+}
+
+body.landingpage div#searchheader p.propertySearchExample {
+    color: #999;
+    margin-bottom: 5px;
+    padding-left: 160px
+}
+
+#agenthome.landingpage div#searchheader p.propertySearchExample {
+    padding-left: 135px
+}
+
+body.landingpage div#searchheader input.submit {
+    border-bottom-color: #CCC
+}
+
+#searchheaderpromolink:hover, #searchheaderpromolink:active {
+    background-color: transparent
+}
+
+#searchheaderpromolink img {
+    bottom: 5px;
+    position: absolute;
+    right: 0
+}
+
+#banner, #banneriPhone {
+    margin: 12px 15px 0
+}
+
+    #homepagebanner:hover, #banneriPhone a:hover {
+        background: transparent
+    }
+
+body.landingpage div.banner div#searchheadersellers div#searchheader {
+    height: 18.2em
+}
+
+body.errorpage div.banner div#searchheader {
+    height: 14.2em
+}
+
+#banneriPhone a {
+    float: left
+}
+
+#homepageprimarycontent .content {
+    width: 22.3%;
+    float: left;
+    margin-right: 0;
+    padding: 10px
+}
+
+    #homepageprimarycontent .content h3 {
+        font-weight: normal
+    }
+
+        #homepageprimarycontent .content h3 .keyword {
+            font-weight: bold
+        }
+
+#homepageprimarycontent img {
+    margin-left: 4px
+}
+
+#homepageprimarycontent ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0
+}
+
+#homepagesecondarycontent {
+    padding: 1em .5em;
+    background: 0
+}
+
+    #homepagesecondarycontent .content {
+        width: 17%;
+        float: left;
+        font-size: 92%;
+        color: #666;
+        padding: 10px 0 0 0;
+        margin: 10px 10px -10px;
+        border-top: 7px solid #DDD
+    }
+
+    #homepagesecondarycontent #socialMedia.content {
+        width: 20% !important
+    }
+
+    #homepagesecondarycontent #socialMedia .socialItem {
+        padding: 0 0 0 14px
+    }
+
+    #homepagesecondarycontent #socialMedia .socialIcon {
+        float: left;
+        width: 48px
+    }
+
+    #homepagesecondarycontent #socialMedia .socialText {
+        float: right;
+        position: relative;
+        top: 8px;
+        width: 127px
+    }
+
+    #homepagesecondarycontent #socialMedia .fb_iframe_widget {
+        min-height: 64px
+    }
+
+    #homepagesecondarycontent .content h3 {
+        font-size: 1em;
+        border-bottom: 0
+    }
+
+    #homepagesecondarycontent ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0
+    }
+
+body.homepage #sitefooter {
+    border: 10px solid #EEE
+}
+
+div#propertydeals {
+    background: #005b9a url(/ps/images17250/landingpages/propertydeals/propertyDealsBanner.png) bottom left repeat-x
+}
+
+    div#propertydeals #pagebanner {
+        background-image: url(/ps/images17250/landingpages/propertydeals/propertyDealsBanner.png);
+        height: 10.0em;
+        background-position: left bottom;
+        overflow: hidden
+    }
+
+.TB_overlayBG {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #000;
+    filter: alpha(opacity = 75);
+    -moz-opacity: .75;
+    -webkit-opacity: .75;
+    opacity: .75
+}
+
+#iphoneSplash {
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    line-height: normal;
+    padding: 50px;
+    margin: 30px 60px 30px 50px;
+    width: 726px;
+    font-size: 4.2em;
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    height: 320px;
+    background: #497fb7;
+    border: 12px solid #69c
+}
+
+    #iphoneSplash p {
+        font-size: .8em;
+        margin-top: .4em
+    }
+
+    #iphoneSplash h2 {
+        margin: .4em 0
+    }
+
+#closeSplash {
+    position: absolute;
+    top: -32px;
+    right: -40px
+}
+
+#iphoneSplash a:hover {
+    background: 0
+}
+
+#ipadSplash {
+    background-color: rgba(0,0,0,0.75);
+    height: 200%;
+    width: 200%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    margin: 0 -50%
+}
+
+.ipadSplashBanner {
+    float: left
+}
+
+.ipadSplashWrap {
+    margin: .3% auto 0;
+    width: 532px;
+    position: relative
+}
+
+#ipadSplash #ctaWrap {
+    bottom: 2px;
+    height: 77px;
+    left: 25px;
+    padding: 0 10px;
+    position: absolute;
+    text-align: center;
+    width: 453px
+}
+
+#ipadSplash .cta-download {
+    display: block;
+    margin: 0 auto 12px;
+    width: 290px
+}
+
+    #ipadSplash .cta-download img {
+        width: 290px;
+        clear: both
+    }
+
+#ipadSplash .cta-link-left {
+    float: left
+}
+
+#ipadSplash .cta-link-right {
+    float: right
+}
+
+#ipadSplash .ipadSplashWrap #ctaWrap div img {
+    height: 14px
+}
+
+@media screen and (orientation:portrait) {
+    .ipadSplashWrap {
+        margin: 200px auto;
+        width: 682px
+    }
+
+    .ipadSplashBanner {
+        width: 682px
+    }
+
+    #ipadSplash #ctaWrap {
+        width: 583px;
+        height: 96px;
+        left: 32px
+    }
+
+    #ipadSplash .ipadSplashWrap #ctaWrap div img {
+        height: 17px
+    }
+}
+
+body.compact #sitefooter {
+    border: 0 none
+}
+
+#careers {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%
+}
+
+    #careers th {
+        background-color: #63ba21;
+        border: 1px solid black
+    }
+
+    #careers td {
+        border: 1px solid black;
+        text-align: center;
+        cellpadding: 3px
+    }
+
+    #careers .alt {
+        background-color: #d6ecf2
+    }
+
+.testimonialHeader {
+    font-weight: bold
+}
+
+.careersRightImages {
+    height: 33%;
+    vertical-align: bottom;
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em
+}
+
+.careersLeftImages {
+    height: 50%;
+    float: left;
+    vertical-align: top;
+    margin-top: 1em;
+    margin-bottom: 3em
+}
+
+.careersLeftImagesHolder {
+    float: left;
+    width: 30%;
+    margin-right: .5em
+}
+
+.testimonialHolder {
+    float: right;
+    width: 63%;
+    padding-right: 10px
+}
+
+.careersLineBreak {
+    display: block;
+    margin-top: .5em
+}
+
+.careersBulletListHolder {
+    float: left;
+    width: 64%;
+    padding-right: 10px
+}
+
+.careersTopImageHolder {
+    float: right;
+    width: 33%
+}
+
+.commercialSecondaryContent #hotPropertiesSideBar h3.first {
+    margin-bottom: 0
+}
+
+.commercialSecondaryContent #hotPropertiesSideBar .hotProperties .hot-prop {
+    padding: .5em 0 .7em .5em;
+    margin: .4em .1em .3em .1em;
+    border-left: 1px solid #f9f9f9;
+    border-top: 1px solid #f9f9f9;
+    border-right: 1px solid #f9f9f9;
+    text-align: left;
+    min-height: 102px
+}
+
+    .commercialSecondaryContent #hotPropertiesSideBar .hotProperties .hot-prop:hover {
+        border: 1px solid #ddd
+    }
+
+    .commercialSecondaryContent #hotPropertiesSideBar .hotProperties .hot-prop .hot-prop-thumb {
+        float: left;
+        min-height: 100px;
+        padding: 1px 7px 7px 0
+    }
+
+        .commercialSecondaryContent #hotPropertiesSideBar .hotProperties .hot-prop .hot-prop-thumb img {
+            max-height: 80px;
+            max-width: 110px;
+            border: 1px solid #ddd;
+            padding: 3px
+        }
+
+            .commercialSecondaryContent #hotPropertiesSideBar .hotProperties .hot-prop .hot-prop-thumb img:hover {
+                border: 1px solid #3350ac
+            }
+
+    .commercialSecondaryContent #hotPropertiesSideBar .hotProperties .hot-prop .price {
+        margin-left: .3em;
+        color: #007200
+    }
+
+    .commercialSecondaryContent #hotPropertiesSideBar .hotProperties .hot-prop .hot-prop-info {
+        margin: 3px;
+        min-height: 60px
+    }
+
+.commercialSecondaryContent #hotPropertiesSideBar #viewAll {
+    margin: .6em 0 .1em 0;
+    clear: both
+}
+
+    .commercialSecondaryContent #hotPropertiesSideBar #viewAll .osButtonContainer {
+        padding: 4px 4px 0
+    }
+
+        .commercialSecondaryContent #hotPropertiesSideBar #viewAll .osButtonContainer .osButton {
+            width: auto;
+            height: auto
+        }
+
+    .commercialSecondaryContent #hotPropertiesSideBar #viewAll a:hover {
+        color: #004889;
+        text-decoration: none;
+        background: #f9f9f9
+    }
+
+.channel-selector {
+    padding-left: 160px;
+    height: 32px;
+    overflow: visible;
+    margin: 0
+}
+
+    .channel-selector li {
+        background: #f0f0f0;
+        background: -moz-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f0f0f0),color-stop(100%,#e4e4e4));
+        background: -webkit-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+        background: -o-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+        background: -ms-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+        background: linear-gradient(to bottom,#f0f0f0 0,#e4e4e4 100%);
+        border-radius: 2px;
+        border: 1px solid #aaa;
+        text-shadow: 1px 1px #fff;
+        position: relative;
+        padding: 0;
+        line-height: 25px;
+        margin-right: -1px;
+        box-shadow: inset 0 2px 2px 0 #fff;
+        float: left
+    }
+
+        .channel-selector li:hover {
+            background: #e4e4e4;
+            background: -moz-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+            background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#f0f0f0),color-stop(100%,#e4e4e4));
+            background: -webkit-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+            background: -o-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+            background: -ms-linear-gradient(top,#f0f0f0 0,#e4e4e4 100%);
+            background: linear-gradient(to bottom,#f0f0f0 0,#e4e4e4 100%);
+            box-shadow: none
+        }
+
+        .channel-selector li.selected, .channel-selector li.selected:hover {
+            background: #196fb6;
+            box-shadow: 1px 0 3px 0 #404040 inset;
+            border: 1px solid #1c3e61;
+            text-shadow: 0 -2px #004877
+        }
+
+            .channel-selector li.selected:after {
+                background: url(/ps/images17250/home/channel-selector-arrow.png) 0 0 no-repeat;
+                content: "";
+                height: 14px;
+                margin-left: -14px;
+                position: absolute;
+                left: 50%;
+                bottom: -10px;
+                width: 27px;
+                z-index: 100
+            }
+
+        .channel-selector li a {
+            text-decoration: none
+        }
+
+            .channel-selector li a + span {
+                display: none
+            }
+
+        .channel-selector li.js a {
+            display: none
+        }
+
+            .channel-selector li.js a + span {
+                display: block
+            }
+
+        .channel-selector li span {
+            color: #404040;
+            padding: 2px 16px
+        }
+
+        .channel-selector li:hover {
+            border: 1px solid #b0b8be
+        }
+
+    .channel-selector .selected span {
+        color: #fff
+    }
+
+.fake-text-input {
+    border: 1px solid #b0b8be;
+    border-radius: 2px;
+    box-shadow: inset 0 1px 5px 0 #bfbfbf;
+    width: 500px
+}
+
+    .fake-text-input input[type=text] {
+        border: 0
+    }
+
+    .fake-text-input #searchButton {
+        float: right;
+        font-size: 18px
+    }
+
+.homepage #searchheader .fake-text-input {
+    float: left;
+    margin: -23px 0 0 160px;
+    *margin: 0 0 0 2px;
+    padding: 2px
+}
+
+    .homepage #searchheader .fake-text-input input.searchBox {
+        height: 1.7em;
+        float: left;
+        left: 1px;
+        line-height: 1.7em;
+        outline: 0;
+        padding: 0 10px 0;
+        position: relative;
+        top: 2px;
+        width: 350px
+    }
+
+.notSelectedTabContent {
+    position: absolute;
+    top: -9999px;
+    left: -9999px
+}
+
+.homepage div#searchheader h1 {
+    padding-bottom: .4em
+}
+
+#schoolshome .searchBox.clone {
+    color: #b3b2b2
+}
+
+#schoolshome .search-location-wrap {
+    display: inline-block;
+    width: 40%
+}
+
+    #schoolshome .search-location-wrap .searchBox {
+        width: 97%
+    }
+
+#schoolshome span.errors {
+    color: #d00
+}
+
+.affiliatelogos__imagewrapper {
+    padding-right: 20px;
+    width: 115px;
+    float: left
+}
+
+.affiliatelogos__text {
+    display: inline-block;
+    overflow: hidden;
+    padding-bottom: 14px;
+    width: 515px
+}
+
+.affiliatelogos__image {
+    max-height: 60px;
+    max-width: 115px;
+    padding-bottom: 26px
+}
+
+.full-width-modifier #sitewrapper {
+    width: auto
+}
+
+.full-width-modifier #siteheader {
+    width: 980px;
+    margin: 0 auto
+}
+
+.full-width-modifier #pagewrapper {
+    width: 960px;
+    margin: 0 auto
+}
+
+.full-width-modifier #sitefooter {
+    width: 920px;
+    margin: 10px auto 0 auto
+}
+
+    .full-width-modifier #sitefooter.site-footer {
+        width: 100%;
+        margin-top: 32px
+    }
+
+#pagesummary {
+    background-color: #efefef;
+    background-size: cover;
+    border-top: 1px solid #ccc;
+    margin-top: -1px;
+    text-align: center;
+    font-family: 'Open Sans',Arial,Helvetica,sans-serif
+}
+
+    #pagesummary #searchheader {
+        width: 976px;
+        margin: 0 auto
+    }
+
+        #pagesummary #searchheader #searchheaderpic {
+            background-color: transparent;
+            border-top: 0;
+            margin-top: 0
+        }
+
+            #pagesummary #searchheader #searchheaderpic h1 {
+                padding-bottom: .75em;
+                font-weight: normal;
+                font-family: 'Open Sans',Arial,Helvetica,sans-serif
+            }
+
+        #pagesummary #searchheader .search-control-wrapper {
+            background: #c1bdbd;
+            border-radius: 2px;
+            padding: 5px 6px;
+            box-shadow: 0 -1px 0 0 rgba(255,255,255,0.3) inset;
+            display: inline-block;
+            margin: 0 auto
+        }
+
+        #pagesummary #searchheader .searchBox, .touchsearch .searchBox {
+            height: 38px;
+            line-height: 38px;
+            padding: 0 8px;
+            margin: 0;
+            font-size: 1.25em;
+            width: 368px;
+            border-radius: 3px;
+            border: solid 1px #bbb;
+            vertical-align: baseline
+        }
+
+.touchsearch .searchBox {
+    float: none;
+    margin-left: 8px
+}
+
+#pagesummary #searchheader .btn, .touchsearch .btn {
+    padding: 0 24px;
+    line-height: 40px;
+    height: 40px;
+    position: relative;
+    vertical-align: baseline;
+    margin-left: 4px
+}
+
+.touchsearch .btn {
+    position: relative;
+    top: 3px
+}
+
+#pagesummary #searchheader .inputset {
+    width: 543px;
+    margin: 0 auto;
+    text-align: left
+}
+
+#pagesummary #searchheader .inputset-first {
+    margin-top: 24px
+}
+
+#pagesummary #searchheader .inputset label {
+    font-weight: normal;
+    font-size: 1.15em
+}
+
+#housepriceindexbox {
+    width: 99.5%;
+    color: #333;
+    border: 1px solid #dee6f1;
+    background: #edf6ff 100% 100% no-repeat
+}
+
+    #housepriceindexbox h2 {
+        margin: 5px 10px;
+        font-weight: bold
+    }
+
+    #housepriceindexbox p {
+        margin: 10px 226px 5px 10px;
+        line-height: 144%
+    }
+
+        #housepriceindexbox p.title {
+            text-transform: uppercase
+        }
+
+.soldSummarySpacer {
+    float: left;
+    width: 100%
+}
+
+.soldSummary {
+    width: 100%;
+    clear: both
+}
+
+    .soldSummary table {
+        width: 100%;
+        padding: 0;
+        margin-top: 10px
+    }
+
+        .soldSummary table .lightbg {
+            background-color: #edf6ff
+        }
+
+        .soldSummary table td, .soldSummary table th {
+            padding: .5em;
+            border-right: 1px solid #ddd;
+            text-align: left
+        }
+
+a.sortArr {
+    padding-right: 1em
+}
+
+    a.sortArr img {
+        width: 1em;
+        margin-right: -1em
+    }
+
+.soldSummary table th.address, .soldSummary table td.address {
+    width: 40%
+}
+
+.soldSummary table td.center, .soldSummary table th.center {
+    text-align: center
+}
+
+.soldSummary table td.stat {
+    font-weight: bold;
+    font-size: 1.2em
+}
+
+#housepriceresults {
+    width: 100%
+}
+
+    #housepriceresults p {
+        margin: 1em 0 0 0;
+        width: 50%;
+        float: left
+    }
+
+    #housepriceresults div.submitset {
+        clear: none
+    }
+
+select#resultsPerPage, div.results, div.streetsummary {
+    float: left
+}
+
+form.houseprices {
+    float: right
+}
+
+select#resultsPerPage {
+    margin-right: .5em
+}
+
+.changelocationnew #housePricesChangeLocation .inputset label {
+    width: 40%
+}
+
+.changelocationnew #housePricesChangeLocation .inputset input {
+    width: 56.5%
+}
+
+.changelocationnew #housePricesChangeLocation p.propertySearchExample {
+    clear: both;
+    font-size: 85%;
+    font-weight: bold;
+    padding-left: 9.7em;
+    color: #999;
+    margin-bottom: 0
+}
+
+.changeLocation #housePricesChangeLocation .searchBox {
+    width: 93%
+}
+
+#housePricesSearchCriteria .updateBtn input {
+    margin-left: 40%
+}
+
+#housePricesSearchCriteria .inputset label {
+    width: 40%
+}
+
+#housePricesChangeLocation label {
+    margin-left: 8px
+}
+
+#housePricesChangeLocation .submitset {
+    margin: 8px 0 0 8px
+}
+
+#housePricesChangeLocation .inputset {
+    padding-top: .4em
+}
+
+#housePricesSearchCriteria #search-location label {
+    margin-left: 24px
+}
+
+#housePricesSearchCriteria #search-location .search-control-wrapper {
+    display: inline-block;
+    margin-left: 0;
+    border-radius: 2px;
+    padding: 5px 6px
+}
+
+    #housePricesSearchCriteria #search-location .search-control-wrapper .searchBox {
+        margin-left: 0
+    }
+
+    #housePricesSearchCriteria #search-location .search-control-wrapper input.button {
+        width: auto;
+        float: none;
+        top: 1px;
+        background-color: #196fb6;
+        background-image: url(/ps/images17250/fullsite/common/btn-background.png);
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        border: 1px solid #003f72;
+        border-bottom-color: #003159;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 3px;
+        margin-left: 8px
+    }
+
+.locationvar ul {
+    list-style: none;
+    margin: 0 .5em;
+    line-height: 2.0em
+}
+
+    .locationvar ul li {
+        float: left;
+        display: inline;
+        padding-right: 1em
+    }
+
+.locationvar {
+    overflow: hidden
+}
+
+.noresults {
+    padding: .5em .5em .5em 2.5em;
+    border: 1px solid #ffe9bf;
+    background: #fff8e8 url(/ps/images17250/icons/alert.gif) .5em .5em no-repeat;
+    margin-bottom: 1em
+}
+
+body.leftside .secondarycontent {
+    width: 27.3%;
+    float: left
+}
+
+body.leftside .primarycontent {
+    width: 72%;
+    float: right
+}
+
+body.leftside .secondarycontent .content {
+    margin-left: 11px;
+    margin-right: 0
+}
+
+body.leftside .soldSummary table td.boldprice {
+    font-weight: bold
+}
+
+body.leftside .primarycontent a#link-backtoresult-sold {
+    margin-top: 0;
+    background-position: 0 -570px
+}
+
+body.leftside .soldSummary table .lightbg {
+    background-color: #f1f3f9
+}
+
+body.leftside #housePricesSearchCriteria .inputset input {
+    width: 57%
+}
+
+body.leftside .streetSummary {
+    height: 403px;
+    overflow: scroll;
+    overflow-x: hidden
+}
+
+    body.leftside .streetSummary table .lightbg {
+        background-color: #f1f3f9
+    }
+
+#mapwrapper {
+    position: relative;
+    padding: 10px
+}
+
+#map_canvas {
+    float: right;
+    border: 1px solid #ddd;
+    height: 570px;
+    margin: 0;
+    width: 100%
+}
+
+#mapfooter {
+    clear: both
+}
+
+#mapfooter {
+    border-top: 1px dotted;
+    font-size: .9em;
+    padding: 0 .2em;
+    background: #f5f5f5;
+    color: #555
+}
+
+    #mapfooter span {
+        display: block;
+        float: left
+    }
+
+    #mapfooter ul li {
+        list-style: none;
+        float: right;
+        margin-left: .5em
+    }
+
+    #mapfooter li {
+        float: left;
+        display: inline
+    }
+
+.noshowppspace {
+    margin-left: 2px
+}
+
+#mapkey {
+    float: right;
+    display: block;
+    margin: 0;
+    padding-bottom: 8px;
+    padding-top: 6px
+}
+
+    #mapkey span {
+        display: inline;
+        padding-right: 13px;
+        padding-left: 2px
+    }
+
+    #mapkey img {
+        display: inline
+    }
+
+    #mapkey .heading {
+        display: inline;
+        font-weight: bold;
+        margin: 0 8px 0 3px
+    }
+
+#mapandkey {
+    width: 72%;
+    float: right
+}
+
+#mapfooterlistresult {
+    clear: both
+}
+
+#mapfooterlistresult {
+    border-top: 1px dotted;
+    font-size: .9em;
+    padding: .3em .2em;
+    color: #555
+}
+
+    #mapfooterlistresult span {
+        display: block;
+        float: left
+    }
+
+html {
+    overflow-y: scroll
+}
+
+#showKey, #hideKey {
+    color: #004889;
+    text-decoration: underline;
+    cursor: pointer
+}
+
+    #showKey.hidden {
+        background-image: url("/ps/images17250/propertydetails/icon-sprite-propertydetails-v2.png");
+        background-position: right -302px;
+        padding-right: 2em
+    }
+
+    #hideKey.visible {
+        background-image: url("/ps/images17250/propertydetails/icon-sprite-propertydetails-v2.png");
+        background-position: right -272px;
+        padding-right: 2em
+    }
+
+    #showKey.visible, #hideKey.hidden {
+        display: none
+    }
+
+#mapandkey2 {
+    width: 100%
+}
+
+#map_canvas2 {
+    float: right;
+    border: 1px solid #ddd;
+    height: 350px;
+    margin: 0;
+    width: 100%
+}
+
+.helpinfoclass {
+    border: 1px solid #ddd;
+    display: none;
+    height: 83px;
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    width: 338px;
+    z-index: 999;
+    background-color: #FFF;
+    outline-style: none;
+    padding: .7em
+}
+
+    .helpinfoclass h4 {
+        font-size: 1em;
+        clear: none;
+        white-space: normal;
+        top: -30px;
+        position: relative
+    }
+
+    .helpinfoclass p {
+        font-size: .9em;
+        background-color: #FFF;
+        margin-bottom: 0;
+        white-space: normal;
+        top: -30px;
+        position: relative;
+        width: 100%
+    }
+
+.helpinfoCloseButton {
+    background: url("/ps/images17250/icons/fancybox/fancy_close.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 27px;
+    position: relative;
+    right: -337px;
+    top: -23px;
+    width: 26px;
+    z-index: 999
+}
+
+#soldPriceMessage {
+    position: absolute;
+    background: #555;
+    margin: 0 auto;
+    color: #fff;
+    padding: .8em 1.4em .8em .8em;
+    top: 25%;
+    width: auto;
+    border: 3px solid #f7f7f7;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px
+}
+
+    #soldPriceMessage .messageClose {
+        position: absolute;
+        top: .4em;
+        right: .4em;
+        background: url(/ps/images17250/maps/icons/cross-sold.png) no-repeat;
+        height: 14px;
+        border: 1px solid #ccc;
+        width: 14px;
+        display: block
+    }
+
+        #soldPriceMessage .messageClose:hover {
+            border-color: #eee
+        }
+
+    #soldPriceMessage h3 {
+        margin-right: 14px;
+        color: #fff;
+        border-bottom: 0
+    }
+
+    #soldPriceMessage p {
+        margin-bottom: 0;
+        margin-right: 14px
+    }
+
+    #soldPriceMessage a {
+        color: #fff
+    }
+
+        #soldPriceMessage a:hover {
+            text-decoration: none;
+            background: #666
+        }
+
+.soldprices .popupClose {
+    border: 1px solid #666;
+    background: url(/ps/images17250/maps/icons/cross-sold.png) no-repeat
+}
+
+    .soldprices .popupClose:hover {
+        border-color: #969696
+    }
+
+.soldprices .map-popup h3, body.report .soldprices .map-popup h3 {
+    background: #666;
+    line-height: 100%;
+    color: #fff
+}
+
+.soldprices .map-popup h4 {
+    font-size: .9em;
+    padding: .4em;
+    word-spacing: .2em;
+    margin: 0;
+    background-color: #f1f3f9;
+    border-bottom: 1px solid #666
+}
+
+.soldprices .lightbg {
+    background-color: #f1f3f9
+}
+
+.map-popup #soldpricesentry {
+    padding: .4em .4em .4em .4em;
+    font-size: .9em;
+    border-bottom: 1px dotted #666
+}
+
+    .map-popup #soldpricesentry span {
+        font-weight: bold;
+        display: inline;
+        font-size: 110%
+    }
+
+#solddate {
+    display: inline;
+    font-size: 110%
+}
+
+.map-popup .soldaddress {
+    color: #666;
+    display: block
+}
+
+.map-popup .soldtenure, .map-popup .soldtype {
+    color: #666;
+    display: inline
+}
+
+.map-popup .soldtenure, .map-popup .soldtype {
+    white-space: nowrap
+}
+
+#popup-wrapper {
+    position: relative
+}
+
+#pointer {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-image: url(/ps/images17250/maps/icons/popup-arrow-sold.png);
+    height: 13px;
+    width: 9px;
+    z-index: 5
+}
+
+.map-popup #soldprices {
+    height: 128px;
+    overflow-y: auto
+}
+
+.map-popup .contents {
+    min-height: 120px !important;
+    overflow-x: hidden;
+    margin: .1em 0 .4em 0;
+    width: auto;
+    border-top: 1px dotted #ccc
+}
+
+.topleft {
+    top: 3px;
+    left: -8px;
+    background-position: 0 0
+}
+
+.topright {
+    top: 3px;
+    left: 276px;
+    background-position: -10px 0
+}
+
+.bottomleft {
+    top: 140px;
+    left: -6px;
+    background-position: 0 -13px
+}
+
+.bottomright {
+    top: 140px;
+    left: 275px;
+    background-position: -10px -13px
+}
+
+#soldpricelist {
+    position: relative;
+    overflow: hidden
+}
+
+    #soldpricelist p.propertySearchExample {
+        clear: both;
+        font-size: 85%;
+        font-weight: bold;
+        padding-left: 9.7em;
+        color: #999;
+        margin-bottom: 0
+    }
+
+    #soldpricelist .content {
+        margin-left: 0;
+        margin-top: 0
+    }
+
+    #soldpricelist .streetSummary {
+        margin: 0;
+        padding: 0;
+        max-height: 403px
+    }
+
+        #soldpricelist .streetSummary table td {
+            padding: .5em;
+            line-height: 120%;
+            border-right: 1px solid #ddd
+        }
+
+        #soldpricelist .streetSummary table {
+            width: 100%;
+            max-height: 400px
+        }
+
+.streetSummary {
+    border-bottom: 1px solid #ccc
+}
+
+.secondarycontent h4 {
+    border-bottom: 1px solid #ccc;
+    margin: 10px 0 0 0;
+    padding-bottom: 2px;
+    padding-left: 8px
+}
+
+.contents span {
+    font-size: .9em;
+    color: #777;
+    display: block;
+    padding: 0 .5em
+}
+
+.contents strong {
+    color: #333;
+    font-weight: normal
+}
+
+.contents .distance {
+    color: #888;
+    margin: 0
+}
+
+.contents .age {
+    font-weight: normal
+}
+
+.contents .desc {
+    font-size: .9em;
+    color: #777
+}
+
+    .contents .desc li {
+        display: inline;
+        padding: 0
+    }
+
+.contents .links {
+    margin: .5em
+}
+
+    .contents .links li {
+        line-height: 1.5em
+    }
+
+        .contents .links li a:hover {
+            text-decoration: none
+        }
+
+.soldSummary table {
+    width: 100%;
+    padding: 0;
+    margin-top: .7em
+}
+
+#housePricesSearchCriteria {
+    margin-top: 12px
+}
+
+body.leftside.soldPricesTemp #housePricesSearchCriteria .inputset input {
+    width: 10%
+}
+
+body.leftside.soldPricesTemp .changelocationnew #housePricesChangeLocation .inputset label {
+    width: 10%
+}
+
+body.leftside.soldPricesTemp .changelocationnew #housePricesChangeLocation .inputset input {
+    width: 10%
+}
+
+body.leftside.soldPricesTemp .changelocationnew #housePricesChangeLocation .inputset select {
+    width: 10%
+}
+
+body.leftside.soldPricesTemp #housePricesSearchCriteria .inputset label {
+    width: 10%
+}
+
+body.leftside.soldPricesTemp #mapkey img {
+    margin: .5em
+}
+
+body.leftside.soldPricesTemp #mapkey table {
+    margin: .5em .5em .5em 0
+}
+
+body.leftside.soldPricesTemp #mapkey {
+    margin-bottom: 1.5em;
+    float: none
+}
+
+    body.leftside.soldPricesTemp #mapkey #mapfooter {
+        margin-right: .9em
+    }
+
+#mapkey td {
+    height: 22px;
+    width: 115px
+}
+
+#soldList {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin-left: 0;
+    padding: 8px 0 0 0;
+    float: left;
+    width: 99.8%
+}
+
+    #soldList .extra {
+        border-right: 0;
+        width: 50px
+    }
+
+#disc {
+    float: left
+}
+
+body.report.leftside ul.formattedlist li {
+    padding-left: .5em;
+    height: 2em;
+    overflow: hidden
+}
+
+body.report.leftside #pageheader h1 {
+    float: left;
+    font-size: 1.5em
+}
+
+body.report.leftside #pageheader #soldprices-heading h1 {
+    padding: 0
+}
+
+body.report.leftside #pageheader #soldprices-heading {
+    max-width: 580px;
+    float: left;
+    padding: 12px .75em;
+    clear: left
+}
+
+    body.report.leftside #pageheader #soldprices-heading .soldprices-backtopropertylink {
+        float: left;
+        padding-left: 1em
+    }
+
+        body.report.leftside #pageheader #soldprices-heading .soldprices-backtopropertylink a {
+            color: #004889
+        }
+
+body.report.leftside #sellersPriceGuideHeader {
+    border: 0;
+    background-color: #f1f3f9
+}
+
+body.report.leftside #pageheader {
+    background: 0
+}
+
+body.report.leftside #pagewrapper {
+    background: #fff
+}
+
+#soldList h2 {
+    float: left;
+    border: 0;
+    padding: 4px 0 0 .6em;
+    font-weight: normal
+}
+
+#soldList .address .type {
+    color: #666
+}
+
+.soldprices .map-popup #soldpricesentry span {
+    display: inline-block;
+    width: 66px
+}
+
+.soldprices .map-popup #soldpricesentry .photos {
+    float: right
+}
+
+.map-popup #soldpricesentry .noBed {
+    color: #666
+}
+
+#enlargeMap {
+    background: url("/ps/images17250/sellersarea/arrow.gif") no-repeat scroll 0 70% transparent;
+    padding: 0 0 0 1.5em;
+    display: block;
+    margin: 0 0 .5em 0
+}
+
+#filters {
+    display: block;
+    float: left;
+    width: 100%;
+    margin: 22px 0 24px 24px
+}
+
+.soldSummary table td, .soldSummary table th {
+    vertical-align: top
+}
+
+body.report.leftside, body.report.leftside #pagecontent {
+    background: #fff
+}
+
+    body.report.leftside .secondarycontent .content {
+        background: none repeat scroll 0 0 transparent;
+        border-color: #ccc -moz-use-text-color -moz-use-text-color;
+        border-right: medium none;
+        border-style: solid none none;
+        border-width: 1px medium medium;
+        clear: both;
+        margin: 1em .9em 0 0
+    }
+
+        body.report.leftside .secondarycontent .content.first {
+            border: 0;
+            margin-top: 0
+        }
+
+body.landingpage .primarycontent .content {
+    border-top: 0;
+    margin-top: 7px
+}
+
+#storedLocations {
+    margin-top: 1em
+}
+
+body.report.leftside .secondarycontent .content h3 {
+    margin-bottom: 0
+}
+
+#mapandkey2 #map_canvas2 {
+    margin-bottom: .2em
+}
+
+body.report.leftside #sellersPriceGuideHeader .inputset {
+    padding-left: 0;
+    margin: 0 1em 0 0
+}
+
+    body.report.leftside #sellersPriceGuideHeader .inputset .searchBox {
+        width: 300px
+    }
+
+body.compact #searchheader.newSoldPrices {
+    padding-bottom: 1em
+}
+
+body.report.leftside #sellersPriceGuideHeader #filters div.inputset#last {
+    margin-right: 0;
+    float: right
+}
+
+body.report.leftside #filters .inputset {
+    margin-right: 2em
+}
+
+    body.report.leftside #filters .inputset .touchsearch-selectwrapper {
+        background-color: #fff
+    }
+
+#soldpricepopupitems {
+    height: 140px;
+    overflow: auto
+}
+
+    #soldpricepopupitems .photos {
+        margin-right: 5px;
+        float: left
+    }
+
+    #soldpricepopupitems .matchRecord {
+        height: 80px
+    }
+
+        #soldpricepopupitems .matchRecord .soldAddress {
+            width: 140px
+        }
+
+    #soldpricepopupitems .record {
+        clear: both
+    }
+
+#soldpricesentry .soldAddress {
+    margin: .3em 0
+}
+
+#soldpricepopupitems .soldDesc {
+    color: #666;
+    display: inline-block;
+    width: 107px
+}
+
+#soldpricepopupitems #solddate {
+    color: #666;
+    font-size: .9em
+}
+
+#question {
+    display: block;
+    text-align: right;
+    color: #666
+}
+
+    #question p {
+        display: inline-block;
+        margin-top: 1em
+    }
+
+    #question img {
+        margin: 0 0 0 .7em;
+        vertical-align: -7px
+    }
+
+body.leftside.report #sellersPriceGuideHeader .inputset label {
+    color: #666;
+    padding: 0 1.2em 0 0
+}
+
+body.leftside.report #sellersPriceGuideHeader .content {
+    padding: 16px 6px 5px 6px;
+    margin-bottom: 2em
+}
+
+div.drilldowncontainer.content {
+    padding: 0;
+    height: 349px;
+    background: #fff
+}
+
+    div.drilldowncontainer.content h3 {
+        margin: 0
+    }
+
+.secondarycontent .drilldowncontainer ul.sidemenu {
+    float: none;
+    border: 0;
+    width: 245px;
+    height: 249px
+}
+
+#storedLocations ul {
+    list-style: none outside none;
+    margin: 0 0 .5em .5em;
+    padding: 0
+}
+
+#storedLocations li {
+    margin: 0 .7em 0 0;
+    padding: .5em 0 0;
+    display: inline
+}
+
+#soldList #sort {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 .7em 0 0;
+    text-align: right
+}
+
+    #soldList #sort label {
+        font-size: 1.15em;
+        margin-right: 6px;
+        display: inline-block;
+        height: 32px;
+        line-height: 32px;
+        vertical-align: top
+    }
+
+body.touchsearch #sort .short-select-wrapper {
+    height: 30px;
+    line-height: 30px
+}
+
+    body.touchsearch #sort .short-select-wrapper select {
+        height: 30px;
+        line-height: 30px;
+        padding-bottom: 0;
+        padding-top: 0
+    }
+
+.matchRecord td {
+    height: 25px
+}
+
+.soldAddress {
+    margin: 0 0 .7em;
+    display: block;
+    font-weight: bold
+}
+
+.soldDate {
+    width: 90px
+}
+
+.soldType {
+    width: 245px
+}
+
+.soldPrice {
+    width: 80px;
+    font-weight: bold
+}
+
+.soldBed {
+    color: #000
+}
+
+.soldDetails {
+    position: relative;
+    float: left;
+    width: 495px
+}
+
+tr.lightColor .soldType, tr.lightColor .soldBed, tr.lightColor .soldDate, tr.lightColor .soldPrice {
+    color: #7d7d7d
+}
+
+.soldUnit .photos {
+    position: relative;
+    margin-left: 505px;
+    text-align: center;
+    width: 98px
+}
+
+.photos a.photo {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #ddd;
+    display: block;
+    line-height: 85%;
+    text-align: center;
+    width: 96px
+}
+
+    .photos a.photo:hover {
+        border: 1px solid #004889;
+        background: #FFF
+    }
+
+.photos img {
+    max-height: 70px;
+    max-width: 90px;
+    margin: 3px
+}
+
+.match {
+    display: block
+}
+
+.matchLink {
+    float: right
+}
+
+table.matchRecord {
+    display: block
+}
+
+body.leftside .soldSummary ul {
+    margin: 0;
+    clear: both
+}
+
+body.leftside .soldSummary li.lightbg {
+    background-color: #f1f3f9;
+    padding: .7em;
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+body.leftside .soldSummary li.soldUnit {
+    padding: 1em;
+    list-style: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    min-height: 55px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #efefef
+}
+
+table.matchRecord {
+    margin-top: 0
+}
+
+    table.matchRecord td {
+        border: 0;
+        padding: 0
+    }
+
+.noBed {
+    float: left;
+    width: 80px
+}
+
+body.report #sellersPriceGuideHeader #housePricesSearchCriteria .inputset label {
+    width: auto;
+    padding: 0 .7em 0 0;
+    font-weight: normal
+}
+
+.print-link-span {
+    padding: 12px 0 0;
+    border-top: solid 1px #ddd
+}
+
+.js a#link-print, .js a#link-printheader {
+    float: right;
+    margin-right: 8px
+}
+
+@media print {
+    * html .soldSummarySpacer {
+        float: none
+    }
+
+    BODY {
+        font-size: 10pt
+    }
+
+    .soldSummary table {
+        width: 100%;
+        border: 0
+    }
+
+        .soldSummary table th {
+            width: 15%
+        }
+
+            .soldSummary table th.center {
+                width: 20%
+            }
+
+        .soldSummary table td.center {
+            width: 20%
+        }
+
+    p.disclaimer, div.secondarycontent {
+        display: none
+    }
+
+    #pagewrapper {
+        background-color: #fff
+    }
+
+    th.right {
+        text-align: left
+    }
+
+    #pagecontent {
+        border-color: #ddd
+    }
+
+    body.leftside .soldSummary li {
+        padding: 1em;
+        list-style: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        min-height: 55px;
+        font-size: 1.1em;
+        border-top: 1px solid #ddd
+    }
+
+    .soldSummary table tr, .soldSummary table td {
+        border: 0
+    }
+
+    form, img.detailsarrow, a.wider {
+        display: none
+    }
+
+    #pagecontent .primarycontent {
+        width: 100%;
+        position: absolute;
+        left: 0
+    }
+
+        #pagecontent .primarycontent .content {
+            width: 760px
+        }
+
+    #question {
+        position: fixed;
+        top: 0;
+        right: 0
+    }
+
+    .print-link-span {
+        display: none
+    }
+
+    tr.lightColor .soldType, tr.lightColor .soldBed, tr.lightColor .soldDate, tr.lightColor .soldPrice {
+        color: #666
+    }
+}
+
+.photos img.lazy {
+    display: none
+}
+
+.ac_input {
+    border: 1px solid #b0b8be
+}
+
+#searchResultsInput {
+    width: 72.4%
+}
+
+.ac_results {
+    padding: 0;
+    border-top: 1px solid #dedede;
+    border-right: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    border-left: 1px solid #dedede;
+    background-color: white;
+    overflow: hidden;
+    z-index: 99999;
+    margin-top: 5px;
+    color: #444;
+    -webkit-tap-highlight-color: rgba(0,0,0,0)
+}
+
+    .ac_results #typeAheadResult {
+        list-style-position: outside;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #666 #999 #666 #666
+    }
+
+#typeAheadResult li {
+    margin: 0;
+    padding: .5em .4em;
+    cursor: default;
+    display: block;
+    line-height: 1.1em;
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+    font-size: 1em
+}
+
+    #typeAheadResult li:hover {
+        background: rgba(0,0,0,0.1)
+    }
+
+    #typeAheadResult li.ac_lasthist {
+        border-bottom: 1px solid #999
+    }
+
+.ac_results li.ac_loading {
+    background: white
+}
+
+.more {
+    display: block;
+    font-size: .85em
+}
+
+#typeAheadResult li.ac_over {
+    background-color: #e7ecf7;
+    border-bottom: 1px solid #00801b
+}
+
+#moreLink.ac_over {
+    background-color: #fff;
+    border-color: #fff
+}
+
+span.highlightLetter {
+    font-weight: bold;
+    color: #00801b
+}
+
+.nomatch {
+    font-style: italic
+}
+
+.ac_results iframe {
+    display: none;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: mask();
+    width: 2000px;
+    height: 3000px
+}
+
+html {
+    overflow-y: scroll
+}
+
+body.dya .primarycontent {
+    float: right
+}
+
+body.dya .secondarycontent {
+    float: left;
+    width: 26.8%;
+    margin-left: .5em
+}
+
+body.dya .content {
+    margin-top: 0
+}
+
+body.dya .secondarycontent .content {
+    margin-right: 0;
+    padding: 0
+}
+
+body.dya #dasheader {
+    padding: .7em;
+    clear: both;
+    position: relative;
+    margin-top: .7em
+}
+
+body.dya #pagecontent {
+    border-top: 1px solid #ccc
+}
+
+p.dasmode {
+    float: right;
+    margin-bottom: 0;
+    clear: both;
+    padding: .3em .7em
+}
+
+#daslogo {
+    height: 32px;
+    width: 250px;
+    background: url("/ps/images17250/drawasearch/dasTealLogoTextOnly.png") no-repeat;
+    position: absolute;
+    top: 0
+}
+
+#dascontrols {
+    float: right
+}
+
+    #dascontrols li {
+        float: left;
+        list-style: none;
+        display: block;
+        margin-left: 1em;
+        padding: 0
+    }
+
+input#dyadialogdiscard {
+    float: left
+}
+
+#dyasavedareas {
+    overflow-y: auto
+}
+
+    #dyasavedareas p {
+        padding: .5em
+    }
+
+#dyamapcolumn {
+    position: relative;
+    padding-top: 0;
+    float: right;
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+#dyasavedareascolumn {
+    padding-bottom: 0;
+    margin-bottom: 0
+}
+
+    #dyasavedareascolumn p {
+        padding: .6em
+    }
+
+#dyamap {
+    width: 685px;
+    border: 1px solid #ccc;
+    height: 600px
+}
+
+.greyoutmap {
+    width: 100%;
+    opacity: .6
+}
+
+#dyaname {
+    float: left
+}
+
+    #dyaname label {
+        font-size: 12px
+    }
+
+    #dyaname input {
+        width: 250px;
+        padding: .3em 0;
+        line-height: 1.5em
+    }
+
+#suggestion {
+    margin-top: 30px;
+    clear: left
+}
+
+#dyacompleted {
+    border: 1px solid #ddd;
+    background: #fff;
+    position: absolute
+}
+
+#dyacompleted-close {
+    position: absolute;
+    display: block;
+    top: -13px;
+    right: -17px;
+    width: 28px;
+    height: 28px;
+    text-indent: -9999em;
+    background: transparent url('/ps/images17250/icons/fancybox/fancy_close.png')
+}
+
+#dyasavedareasheader {
+    background: #f1f1f1;
+    color: #666;
+    border-bottom: 1px solid #e8e8e8;
+    font-weight: normal;
+    padding: .6em
+}
+
+#dyasavedareas {
+    margin: 0;
+    list-style: none
+}
+
+#dyavertexmenu ul {
+    list-style: none;
+    margin: 0
+}
+
+#dyasavedareas li {
+    padding: .4em 0;
+    border-bottom: 1px solid #ddd
+}
+
+    #dyasavedareas li.selected {
+        background: #fff
+    }
+
+        #dyasavedareas li.selected .dyaeditareaimg {
+            border: 1px solid #666
+        }
+
+#dyasavedareas a {
+    display: block
+}
+
+    #dyasavedareas a#dyaloginlink {
+        display: inline
+    }
+
+#dyasavedareascolumn a.signout {
+    float: right
+}
+
+#dyasavedareascolumn a#dyaloginlink {
+    float: right
+}
+
+#dyalocationName {
+    width: auto
+}
+
+.dyasavedareamap {
+    width: 75px;
+    height: 75px;
+    float: left
+}
+
+.dyaeditareaimg {
+    margin: 0 .4em;
+    border: 1px solid #ccc;
+    width: 75px
+}
+
+    .dyaeditareaimg:hover {
+        border-color: #999
+    }
+
+.dyaeditareatextbox {
+    display: none;
+    float: left;
+    padding: .2em .2em .3em .2em;
+    width: 80%
+}
+
+.dyarenameareabutton {
+    display: none;
+    float: left;
+    border: 1px solid #ccc;
+    margin-left: .3em;
+    padding: 0 .4em;
+    line-height: 1.76em;
+    background: #f2f2f2;
+    width: auto
+}
+
+    .dyarenameareabutton:hover {
+        border-color: #999;
+        text-decoration: none
+    }
+
+#dyasavedareas .dyarenameareabutton {
+    display: none
+}
+
+.dyalinks {
+    float: left;
+    margin-left: 0
+}
+
+.dyadeletearealink {
+    border: 0;
+    width: auto;
+    height: auto;
+    margin: 0
+}
+
+.dyaeditareaname {
+    font-size: 1.2em;
+    font-weight: normal;
+    color: #099;
+    margin: 0 .4em
+}
+
+#dyasavedareas a.dyaeditareaname:hover {
+    text-decoration: none;
+    color: #099;
+    background: 0
+}
+
+#dyasavedareas li.selected a.dyaeditareaname {
+    text-decoration: none;
+    color: #333;
+    background: 0;
+    font-weight: bold
+}
+
+.dyaviewpropertieslink {
+    margin-right: 1em
+}
+
+.myrightmovemenu ul li.rename {
+    margin-top: .8em
+}
+
+.dyarenamearealink {
+    margin-top: .8em
+}
+
+.dyaeditareaimg, .dyasavedareamap {
+    float: left
+}
+
+form.dyarenameform {
+    width: 95%;
+    margin: 0 .4em .4em .4em
+}
+
+#dyasavedareas ul.actions {
+    margin-left: 90px
+}
+
+    #dyasavedareas ul.actions li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 0
+    }
+
+.dyasavedarea {
+    padding: 1em 0;
+    border-bottom: 1px solid #ddd
+}
+
+#myrightmove form#dyarename {
+    margin: 0
+}
+
+#myrightmove .dyaeditareaname {
+    margin: 0
+}
+
+#dyavertexmenu, #dyamousehint {
+    position: absolute;
+    padding: .5em;
+    background-color: white
+}
+
+#dyavertexmenu {
+    border: 1px solid black
+}
+
+#dyamousehint {
+    display: none;
+    width: auto;
+    white-space: nowrap;
+    padding: .1em .3em;
+    color: #666;
+    z-index: 1000;
+    border: 2px solid #ddd;
+    overflow: hidden
+}
+
+#dyalogin, #dyaloginformerror, #dyaloadingstatus {
+    display: none
+}
+
+#dyasavedareas h3, #dyanosavedareas h3 {
+    border: 0;
+    background: 0;
+    font-size: 1.1em;
+    margin: 0
+}
+
+#dyasavedareas .benefits, #dyanosavedareas .benefits {
+    padding: .7em
+}
+
+    #dyasavedareas .benefits li, #dyanosavedareas .benefits li {
+        border: 0;
+        padding: .2em 0
+    }
+
+.benefits strong {
+    color: #099;
+    font-size: 1.1em
+}
+
+.video {
+    margin: 1em
+}
+
+.feedback {
+    float: right;
+    padding: .3em 1.2em
+}
+
+#dyaloginform {
+    border: 1px solid #ccc;
+    margin: .5em;
+    padding: 1em .8em;
+    color: #333;
+    background: #f9f9f9
+}
+
+    #dyaloginform fieldset {
+        margin: 1.4em 0 0 0
+    }
+
+    #dyaloginform.inputset {
+        margin: .4em 0
+    }
+
+    #dyaloginform input {
+        width: 65%
+    }
+
+    #dyaloginform checkbox {
+        float: left
+    }
+
+#dyakeepmeloggedin {
+    line-height: 1.2em
+}
+
+#keeplogged, #newuser, #dyaforgottenpw {
+    font-size: .9em
+}
+
+#keeplogged, #newuser {
+    color: #999
+}
+
+#keeplogged {
+    margin: .5em 0
+}
+
+    #keeplogged input {
+        float: left;
+        width: auto;
+        margin-right: .5em
+    }
+
+    #keeplogged label {
+        line-height: 1.3em
+    }
+
+#dyaforgottenpw {
+    margin: 0
+}
+
+#newuser {
+    color: #999
+}
+
+#dyalogin .submitset {
+    margin: .4em 0
+}
+
+#dyalogin h3 {
+    font-size: 1em
+}
+
+#benefits {
+    margin: 1em;
+    border: 1px solid;
+    background: #f9f9f9
+}
+
+    #benefits span {
+        border: 1px solid #fff
+    }
+
+#dyasavedareas #benefits li {
+    list-style-type: circle;
+    margin: 2em .5em;
+    padding: .5em;
+    border: 1px solid #ddd;
+    color: #666;
+    display: none
+}
+
+#dyaregistered {
+    margin: 0
+}
+
+#dyadialog {
+    width: 100%
+}
+
+#dyacompleted {
+    border: 3px solid #ccc;
+    width: 300px;
+    padding: .7em
+}
+
+    #dyacompleted h2 {
+        font-size: 1.0em;
+        margin-bottom: 1em
+    }
+
+    #dyacompleted #viewing span {
+        font-size: 1.0em
+    }
+
+#saving {
+    margin: 0
+}
+
+    #saving p {
+        margin-bottom: 0
+    }
+
+    #saving #saveform {
+        margin-top: .3em
+    }
+
+    #saving #dyasavename2, #dyasavename {
+        margin: 0 .4em 0 0;
+        padding: .4em;
+        width: 59%;
+        display: block;
+        float: left
+    }
+
+    #saving span {
+        display: block;
+        color: #999;
+        font-size: .9em;
+        word-spacing: .3em;
+        clear: left
+    }
+
+#dyasave2 {
+    display: block
+}
+
+.maxareas {
+    background-color: #ffffd5;
+    border: 1px solid #eeb;
+    padding: .5em
+}
+
+#viewing {
+    text-align: center
+}
+
+    #viewing span {
+        font-size: 1.1em;
+        font-weight: bold
+    }
+
+#dyaviewresults2 {
+    margin: 0 auto .4em auto;
+    float: none
+}
+
+#viewing input.submit {
+    border-bottom: 1px solid #ccc
+}
+
+#saveform input.submit {
+    border-bottom: 1px solid #efefef
+}
+
+    #saveform input.submit:hover, #viewing input.submit:hover {
+        border-bottom: 1px solid #fff;
+        margin-top: 0;
+        !important
+    }
+
+#fancybox-content .daspopup {
+    padding: 8px 10px 8px 10px;
+    height: 22px;
+    border-bottom: 1px dotted;
+    background-color: #f2f2f2
+}
+
+#fancybox-content .daspopupLogo {
+    background: url('/ps/images17250/buttons/primary/drawasearch/dasLogo.gif') no-repeat;
+    float: left;
+    height: 22px;
+    width: 140px
+}
+
+#fancybox-content .daspopupText {
+    color: #444;
+    font-size: 1.2em;
+    margin-top: 4px;
+    position: absolute
+}
+
+.popupcontent {
+    padding: 1em
+}
+
+.question {
+    font-size: 1.2em
+}
+
+#dyasavename {
+    width: 90%
+}
+
+#dyadialogcancel {
+    float: left;
+    display: block;
+    margin-left: 1em;
+    margin-top: .6em
+}
+
+#dyadialogsave, #dyadialogyes, #dyadialogdelete {
+    float: left
+}
+
+#dyadialogforsale {
+    margin-right: .5em
+}
+
+#dya-access h3 {
+    height: 22px
+}
+
+    #dya-access h3 img {
+        margin-left: -5px
+    }
+
+#dya-access span {
+    color: #c00;
+    font-weight: bold
+}
+
+#dya-access p {
+    margin-bottom: 0
+}
+
+#dya-access a {
+    font-weight: bold
+}
+
+#dyaoptionbox {
+    position: absolute;
+    top: 8px;
+    margin: 0;
+    padding: 0;
+    right: 5px;
+    z-index: 1
+}
+
+    #dyaoptionbox h1 {
+        background: url(/ps/images17250/buttons/primary/drawasearch/dasTealBtn.png) no-repeat;
+        z-index: 50;
+        margin-top: -5px;
+        display: block;
+        height: 38px;
+        width: 122px;
+        position: absolute
+    }
+
+    #dyaoptionbox ul {
+        list-style: none;
+        background: #fff;
+        border: 1px solid;
+        margin: 0;
+        z-index: 0;
+        opacity: .85;
+        filter: alpha(opacity=85);
+        padding: 32px 0 5px 0;
+        width: 120px;
+        border-left: 1px solid #777;
+        border-right: 1px solid #777;
+        border-bottom: 1px solid #777
+    }
+
+        #dyaoptionbox ul li {
+            font-size: .9em;
+            font-weight: normal;
+            padding: 0 1em
+        }
+
+            #dyaoptionbox ul li a {
+                font-weight: normal
+            }
+
+.version1 #dyaimglink {
+    background: transparent url(/ps/images17250/drawasearch/shape-icon.png);
+    width: 16px;
+    height: 16px;
+    float: left;
+    display: block
+}
+
+.scriptonly {
+    display: none
+}
+
+#dyasavedareas a.scriptonly {
+    display: none
+}
+
+#dyamousehint.dyachoppedhintright {
+    padding-right: 0;
+    margin-right: 0;
+    border-right: 0
+}
+
+#dyamousehint.dyachoppedhintbelow {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: 0
+}
+
+.dyaloading {
+    padding: 1em
+}
+
+    .dyaloading img {
+        padding-right: .8em
+    }
+
+#dyaresultslinkimage:hover {
+    background-color: #EEE
+}
+
+#dyadialogcreatenewarea {
+    margin-left: 1em
+}

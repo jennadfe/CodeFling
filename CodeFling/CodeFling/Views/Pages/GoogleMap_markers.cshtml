@@ -1,0 +1,94 @@
+﻿@section CSS{
+    <style>
+        #map {
+            height: 500px;
+            width: 700px;
+        }
+    </style>
+}
+
+@section Title{
+    <h2>Google Maps - Markers</h2>
+}
+
+@section BodyContent {
+    <div id="map" class="img-fluid img-centered"></div>
+}
+
+@section BodyDescription{
+    This example displays map markers on a Google Map using the <a href="https://developers.google.com/maps/documentation/javascript/">Google Maps JavaScript API</a>. The example code will automatically center around the markers which are loaded from an array. If the zoom is too high (usually because only one marker is in the list, or they are very close together) then the zoom is set to a comfortable level.
+}
+
+@section Path{
+    ~/Views/Pages/GoogleMap_markers.cshtml
+}
+
+@section Dependencies{
+    API Key generated via dfeDevelopers@gmail.com
+}
+
+@section Client{
+    <a href="#">TLIF</a>
+}
+
+@section Date{
+    September 2017
+}
+
+@section Scripts{
+    <script>
+        function initialize() {
+            var locations = [
+                ['DESCRIPTION', 56.8030781, -3.8566609, 4],
+                ['DESCRIPTION', 53.4809309, -2.239097, 3],
+                ['DESCRIPTION', 52.4136709, -1.5849574, 2],
+                ['DESCRIPTION', 52.4773549, -2.0037137, 1]
+            ];
+
+            window.map = new google.maps.Map(document.getElementById('map'), {
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            var infowindow = new google.maps.InfoWindow();
+
+            var bounds = new google.maps.LatLngBounds();
+
+            for (i = 0; i < locations.length; i++) {
+                marker = new google.maps.Marker({
+                    position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+                    map: map,
+                });
+
+                bounds.extend(marker.position);
+
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infowindow.setContent(locations[i][0]);
+                        infowindow.open(map, marker);
+                    }
+                })(marker, i));
+            }
+
+            map.fitBounds(bounds);
+
+            google.maps.event.addListenerOnce(map, 'bounds_changed', function (event) {
+                if (this.getZoom() > 15) {
+                    this.setZoom(15);
+                }
+            });
+
+            var listener = google.maps.event.addListener(map, "idle", function () {
+                google.maps.event.removeListener(listener);
+            });
+        }
+
+        function loadScript() {
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCNUZkb2pcytwQPF_9dmSzcogC0tUqeTBY&' + 'callback=initialize';
+            document.body.appendChild(script);
+        }
+
+        window.onload = loadScript;
+    </script>
+}

@@ -1,0 +1,470 @@
+﻿@section CSS{
+    <link href="~/css/drilldown.css" rel="stylesheet" />
+
+    <style>
+        #bodyContentContainer {
+            width: 810px;
+        }
+
+        .drilldowncontainer {
+            width: 790px;
+        }
+
+            .drilldowncontainer ul.sidemenu {
+                width: 370px;
+            }
+
+        .sidemenu li {
+            text-align: left;
+        }
+
+        .drilldowncontainer ul.sidemenu ul.sublinks li a {
+            background: none;
+        }
+    </style>
+
+}
+
+@section Title{
+    <h2>Image links with nested text menu</h2>
+}
+
+@section BodyContent {
+    <div id="pagewrapper">
+        <div class="clearfix " id="pagecontent">
+            <div class="primarycontent ">
+                <div class="content">
+                    <div class="drilldowncontainer">
+                        <div id="map">
+                            <img class="mapimg" alt="Map of regions in England" src="~/images/EnglandRegions.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionEastMidlands" id="mapLabelAndPopupEastMidlands" style="left: 232px; top: 199px; width: 77px; z-index: 1;">
+                                <div class="popup popupie" id="EastMidlandsPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/Derbyshire.html">Derbyshire </a></li>
+                                        <li><a href="/property/Leicestershire.html">Leicestershire </a></li>
+                                        <li><a href="/property/Lincolnshire.html">Lincolnshire </a></li>
+                                        <li><a href="/property/Northamptonshire.html">Northamptonshire </a></li>
+                                        <li><a href="/property/Nottinghamshire.html">Nottinghamshire </a></li>
+                                        <li><a href="/property/Rutland.html">Rutland </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="EastMidlandsHoverover" style="visibility: hidden;" alt="" src="~/images/EastMidlands.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionEastofEngland" id="mapLabelAndPopupEastofEngland" style="left: 287px; top: 249px; width: 85px; z-index: 1;">
+                                <div class="popup popupie" id="EastofEnglandPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/Bedfordshire.html">Bedfordshire </a></li>
+                                        <li><a href="/property/Cambridgeshire.html">Cambridgeshire </a></li>
+                                        <li><a href="/property/Essex.html">Essex </a></li>
+                                        <li><a href="/property/Hertfordshire.html">Hertfordshire </a></li>
+                                        <li><a href="/property/Norfolk.html">Norfolk </a></li>
+                                        <li><a href="/property/Suffolk.html">Suffolk </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="EastofEnglandHoverover" style="visibility: hidden;" alt="" src="~/images/EastofEngland.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionLondon" id="mapLabelAndPopupLondon" style="left: 280px; top: 303px; width: 46px; z-index: 1;">
+                                <div class="popup popupie" id="LondonPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/Central-London.html">Central London </a></li>
+                                        <li><a href="/property/East-London.html">East London </a></li>
+                                        <li><a href="/property/North-East-London.html">North East London </a></li>
+                                        <li><a href="/property/North-London.html">North London </a></li>
+                                        <li><a href="/property/North-West-London.html">North West London </a></li>
+                                        <li><a href="/property/South-East-London.html">South East London </a></li>
+                                        <li><a href="/property/South-London.html">South London </a></li>
+                                        <li><a href="/property/South-West-London.html">South West London </a></li>
+                                        <li><a href="/property/West-London.html">West London </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="LondonHoverover" style="visibility: hidden;" alt="" src="~/images/London.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionNorthEast" id="mapLabelAndPopupNorthEast" style="left: 191px; top: 52px; width: 61px; z-index: 1;">
+                                <div class="popup popupie" id="NorthEastPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/County-Durham.html">County Durham </a></li>
+                                        <li><a href="/property/Northumberland.html">Northumberland </a></li>
+                                        <li><a href="/property/Tyne-And-Wear.html">Tyne And Wear </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="NorthEastHoverover" style="visibility: hidden;" alt="" src="~/images/NorthEast.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionNorthWest" id="mapLabelAndPopupNorthWest" style="left: 151px; top: 138px; width: 64px; z-index: 1;">
+                                <div class="popup popupie" id="NorthWestPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/Cheshire.html">Cheshire </a></li>
+                                        <li><a href="/property/Cumbria.html">Cumbria </a></li>
+                                        <li><a href="/property/Greater-Manchester.html">Greater Manchester </a></li>
+                                        <li><a href="/property/Lancashire.html">Lancashire </a></li>
+                                        <li><a href="/property/Merseyside.html">Merseyside </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="NorthWestHoverover" style="visibility: hidden;" alt="" src="~/images/NorthWest.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionSouthEast" id="mapLabelAndPopupSouthEast" style="left: 253px; top: 331px; width: 62px; z-index: 1;">
+                                <div class="popup popupie" id="SouthEastPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/Berkshire.html">Berkshire </a></li>
+                                        <li><a href="/property/Buckinghamshire.html">Buckinghamshire </a></li>
+                                        <li><a href="/property/East-Sussex.html">East Sussex </a></li>
+                                        <li><a href="/property/Hampshire.html">Hampshire </a></li>
+                                        <li><a href="/property/Isle-Of-Wight.html">Isle Of Wight </a></li>
+                                        <li><a href="/property/Kent.html">Kent </a></li>
+                                        <li><a href="/property/Oxfordshire.html">Oxfordshire </a></li>
+                                        <li><a href="/property/Surrey.html">Surrey </a></li>
+                                        <li><a href="/property/West-Sussex.html">West Sussex </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="SouthEastHoverover" style="visibility: hidden;" alt="" src="~/images/SouthEast.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionSouthWest" id="mapLabelAndPopupSouthWest" style="left: 134px; top: 339px; width: 65px; z-index: 1;">
+                                <div class="popup popupie" id="SouthWestPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/Bristol-County.html">Bristol (County) </a></li>
+                                        <li><a href="/property/Cornwall.html">Cornwall </a></li>
+                                        <li><a href="/property/Devon.html">Devon </a></li>
+                                        <li><a href="/property/Dorset.html">Dorset </a></li>
+                                        <li><a href="/property/Gloucestershire.html">Gloucestershire </a></li>
+                                        <li><a href="/property/Somerset.html">Somerset </a></li>
+                                        <li><a href="/property/Wiltshire.html">Wiltshire </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="SouthWestHoverover" style="visibility: hidden;" alt="" src="~/images/SouthWest.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionWestMidlands" id="mapLabelAndPopupWestMidlands" style="left: 167px; top: 234px; width: 80px; z-index: 1;">
+                                <div class="popup popupie" id="WestMidlandsPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/Herefordshire.html">Herefordshire </a></li>
+                                        <li><a href="/property/Shropshire.html">Shropshire </a></li>
+                                        <li><a href="/property/Staffordshire.html">Staffordshire </a></li>
+                                        <li><a href="/property/Warwickshire.html">Warwickshire </a></li>
+                                        <li><a href="/property/West-Midlands-County.html">West Midlands (County) </a></li>
+                                        <li><a href="/property/Worcestershire.html">Worcestershire </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="WestMidlandsHoverover" style="visibility: hidden;" alt="" src="~/images/WestMidlands.png" border="0" usemap="#regionMapEnglandRegions">
+                            <div class="maplabelpopup highlightMapRegionYorkshireandtheHumber" id="mapLabelAndPopupYorkshireandtheHumber" style="left: 191px; top: 121px; width: 134px; z-index: 1;">
+                                <div class="popup popupie" id="YorkshireandtheHumberPopup" style="display: none;">
+                                    <ol>
+                                        <li><a href="/property/East-Riding-Of-Yorkshire.html">East Riding Of Yorkshire </a></li>
+                                        <li><a href="/property/North-Yorkshire.html">North Yorkshire </a></li>
+                                        <li><a href="/property/South-Yorkshire.html">South Yorkshire </a></li>
+                                        <li><a href="/property/West-Yorkshire.html">West Yorkshire </a></li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <img class="areamap" id="YorkshireandtheHumberHoverover" style="visibility: hidden;" alt="" src="~/images/YorkshireandtheHumber.png" border="0" usemap="#regionMapEnglandRegions">
+                        </div>
+                        <map name="regionMapEnglandRegions" id="regionMapEnglandRegions">
+                            <area alt="East Midlands" class="highlightMapRegionEastMidlands" id="EastMidlands" href="/property/East-Midlands.html" shape="poly" coords="212,176,214,188,220,191,222,196,220,211,230,215,226,223,249,248,243,262,245,275,251,275,257,269,263,272,263,266,271,260,273,255,277,256,285,241,279,228,301,226,302,222,311,218,307,211,302,208,314,193,308,173,286,152,272,152,261,158,256,172,247,181,231,181,219,165,215,168,212,176">
+                            <area alt="East of England" class="highlightMapRegionEastofEngland" id="EastofEngland" href="/property/East-of-England.html" shape="poly" coords="269,285,276,293,279,302,298,295,305,301,313,300,316,305,312,309,314,311,320,311,331,305,337,306,344,299,341,289,355,285,358,282,358,275,370,265,377,235,372,218,355,205,329,202,322,203,318,212,303,221,301,226,279,228,279,232,282,233,285,241,279,247,277,255,272,255,274,266,270,280,276,286,269,285,349,275,352,274,356,275,350,276,349,275">
+                            <area alt="London" class="highlightMapRegionLondon" id="London" href="/property/London.html" shape="poly" coords="280,312,288,317,288,322,291,319,297,324,301,321,305,324,312,309,317,305,312,299,305,301,301,296,295,296,285,301,280,300,280,312">
+                            <area alt="North East" class="highlightMapRegionNorthEast" id="NorthEast" href="/property/North-East.html" shape="poly" coords="185,48,193,56,189,63,190,73,197,72,200,76,199,83,207,100,216,100,226,94,236,100,244,97,244,92,248,88,247,82,242,77,240,63,233,50,229,22,222,12,219,15,212,3,200,16,205,29,191,38,185,48,228,16,227,17,227,17">
+                            <area alt="North West" class="highlightMapRegionNorthWest" id="NorthWest" href="/property/North-West.html" shape="poly" coords="145,95,161,119,163,129,170,119,171,122,177,119,179,124,175,130,176,135,169,138,169,148,173,153,166,163,172,176,179,180,174,181,169,172,162,176,167,185,174,189,171,192,177,203,190,207,194,206,197,200,213,190,212,177,217,165,211,155,206,153,211,143,190,123,194,117,200,115,201,103,207,98,201,89,200,75,196,71,192,75,190,73,189,63,193,55,185,48,174,57,170,57,168,65,160,65,156,70,145,95,161,176,161,176">
+                            <area alt="South East" class="highlightMapRegionSouthEast" id="SouthEast" href="/property/South-East.html" shape="poly" coords="215,347,221,352,220,355,223,362,233,367,246,358,252,362,261,361,261,358,268,365,271,361,294,357,315,363,321,357,338,349,347,349,349,340,365,331,364,320,367,315,346,318,342,313,333,310,324,309,320,312,312,310,306,323,301,320,297,323,280,312,279,297,269,286,278,286,271,280,275,266,273,261,262,265,262,272,259,268,256,269,248,275,245,275,244,270,246,267,242,263,236,267,234,274,228,276,230,279,226,290,227,304,236,321,234,327,227,331,231,348,220,345,215,347,232,370,245,376,255,368,244,362,232,370">
+                            <area alt="South West" class="highlightMapRegionSouthWest" id="SouthWest" href="/property/South-West.html" shape="poly" coords="43,408,49,409,54,404,62,408,67,416,73,411,73,404,86,399,88,391,104,389,126,395,135,402,144,391,146,388,143,385,146,384,145,380,148,374,157,368,172,365,187,371,193,380,194,372,215,375,217,367,227,363,222,360,222,351,216,347,230,349,228,331,234,328,236,321,227,304,227,290,230,272,223,267,219,270,220,273,209,274,206,271,202,277,192,273,193,282,183,288,184,307,170,318,167,330,151,332,133,327,115,330,110,344,100,342,98,359,87,371,76,375,75,383,65,393,57,399,51,398,46,401,43,408,185,300,186,298,188,298,187,302,185,300,94,331,95,332,94,329,94,331">
+                            <area alt="West Midlands" class="highlightMapRegionWestMidlands" id="WestMidlands" href="/property/West-Midlands.html" shape="poly" coords="160,243,167,249,171,250,163,265,165,273,171,281,175,280,184,287,194,282,193,275,197,274,202,277,215,272,220,274,220,270,223,267,231,277,234,275,236,268,241,267,246,260,249,248,227,222,231,215,220,211,223,203,223,196,215,188,207,190,193,206,183,204,179,209,171,205,166,208,163,217,170,222,164,236,169,234,170,235,160,243">
+                            <area alt="Yorkshire and the Humber" class="highlightMapRegionYorkshireandtheHumber" id="YorkshireandtheHumber" href="/property/Yorkshire-and-the-Humber.html" shape="poly" coords="190,123,211,143,206,153,221,166,229,181,247,182,261,165,261,158,270,151,280,151,283,145,293,157,304,158,289,133,289,127,293,123,281,113,272,97,249,86,244,90,241,98,225,94,216,100,201,101,198,107,199,115,193,117,190,123">
+                        </map>
+                        <ul class="sidemenu clearfix">
+                            <li class="area">Areas in England</li>
+                            <li class="highlightMapRegionEastMidlands" id="sidemenuEastMidlands">
+                                <a class="head header closed" href="/property/East-Midlands.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">East Midlands</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/Derbyshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Derbyshire </a></li>
+                                    <li style="display: none;"><a href="/property/Leicestershire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Leicestershire </a></li>
+                                    <li style="display: none;"><a href="/property/Lincolnshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Lincolnshire </a></li>
+                                    <li style="display: none;"><a href="/property/Northamptonshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Northamptonshire </a></li>
+                                    <li style="display: none;"><a href="/property/Nottinghamshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Nottinghamshire </a></li>
+                                    <li style="display: none;"><a href="/property/Rutland.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Rutland </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionEastofEngland" id="sidemenuEastofEngland">
+                                <a class="head header closed" href="/property/East-of-England.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">East of England</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/Bedfordshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Bedfordshire </a></li>
+                                    <li style="display: none;"><a href="/property/Cambridgeshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Cambridgeshire </a></li>
+                                    <li style="display: none;"><a href="/property/Essex.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Essex </a></li>
+                                    <li style="display: none;"><a href="/property/Hertfordshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Hertfordshire </a></li>
+                                    <li style="display: none;"><a href="/property/Norfolk.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Norfolk </a></li>
+                                    <li style="display: none;"><a href="/property/Suffolk.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Suffolk </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionLondon" id="sidemenuLondon">
+                                <a class="head header closed" href="/property/London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">London&nbsp;</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/Central-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Central London </a></li>
+                                    <li style="display: none;"><a href="/property/East-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">East London </a></li>
+                                    <li style="display: none;"><a href="/property/North-East-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">North East London </a></li>
+                                    <li style="display: none;"><a href="/property/North-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">North London </a></li>
+                                    <li style="display: none;"><a href="/property/North-West-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">North West London </a></li>
+                                    <li style="display: none;"><a href="/property/South-East-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">South East London </a></li>
+                                    <li style="display: none;"><a href="/property/South-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">South London </a></li>
+                                    <li style="display: none;"><a href="/property/South-West-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">South West London </a></li>
+                                    <li style="display: none;"><a href="/property/West-London.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">West London </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionNorthEast" id="sidemenuNorthEast">
+                                <a class="head header closed" href="/property/North-East.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">North East</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/County-Durham.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">County Durham </a></li>
+                                    <li style="display: none;"><a href="/property/Northumberland.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Northumberland </a></li>
+                                    <li style="display: none;"><a href="/property/Tyne-And-Wear.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Tyne And Wear </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionNorthWest" id="sidemenuNorthWest">
+                                <a class="head header closed" href="/property/North-West.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">North West</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/Cheshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Cheshire </a></li>
+                                    <li style="display: none;"><a href="/property/Cumbria.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Cumbria </a></li>
+                                    <li style="display: none;"><a href="/property/Greater-Manchester.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Greater Manchester </a></li>
+                                    <li style="display: none;"><a href="/property/Lancashire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Lancashire </a></li>
+                                    <li style="display: none;"><a href="/property/Merseyside.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Merseyside </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionSouthEast" id="sidemenuSouthEast">
+                                <a class="head header closed" href="/property/South-East.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">South East</a><ul class="sublinks" style="height: 0px;">
+                                    <li style="display: none;"><a href="/property/Berkshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Berkshire </a></li>
+                                    <li style="display: none;"><a href="/property/Buckinghamshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Buckinghamshire </a></li>
+                                    <li style="display: none;"><a href="/property/East-Sussex.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">East Sussex </a></li>
+                                    <li style="display: none;"><a href="/property/Hampshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Hampshire </a></li>
+                                    <li style="display: none;"><a href="/property/Isle-Of-Wight.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Isle Of Wight </a></li>
+                                    <li style="display: none;"><a href="/property/Kent.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Kent </a></li>
+                                    <li style="display: none;"><a href="/property/Oxfordshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Oxfordshire </a></li>
+                                    <li style="display: none;"><a href="/property/Surrey.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Surrey </a></li>
+                                    <li style="display: none;"><a href="/property/West-Sussex.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">West Sussex </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionSouthWest" id="sidemenuSouthWest">
+                                <a class="head header closed" href="/property/South-West.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">South West</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/Bristol-County.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Bristol (County) </a></li>
+                                    <li style="display: none;"><a href="/property/Cornwall.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Cornwall </a></li>
+                                    <li style="display: none;"><a href="/property/Devon.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Devon </a></li>
+                                    <li style="display: none;"><a href="/property/Dorset.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Dorset </a></li>
+                                    <li style="display: none;"><a href="/property/Gloucestershire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Gloucestershire </a></li>
+                                    <li style="display: none;"><a href="/property/Somerset.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Somerset </a></li>
+                                    <li style="display: none;"><a href="/property/Wiltshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Wiltshire </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionWestMidlands" id="sidemenuWestMidlands">
+                                <a class="head header closed" href="/property/West-Midlands.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">West Midlands</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/Herefordshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Herefordshire </a></li>
+                                    <li style="display: none;"><a href="/property/Shropshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Shropshire </a></li>
+                                    <li style="display: none;"><a href="/property/Staffordshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Staffordshire </a></li>
+                                    <li style="display: none;"><a href="/property/Warwickshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Warwickshire </a></li>
+                                    <li style="display: none;"><a href="/property/West-Midlands-County.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">West Midlands (County) </a></li>
+                                    <li style="display: none;"><a href="/property/Worcestershire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Worcestershire </a></li>
+                                </ul>
+                            </li>
+                            <li class="highlightMapRegionYorkshireandtheHumber" id="sidemenuYorkshireandtheHumber">
+                                <a class="head header closed" href="/property/Yorkshire-and-the-Humber.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">Yorkshire and the Humber</a><ul class="sublinks">
+                                    <li style="display: none;"><a href="/property/East-Riding-Of-Yorkshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">East Riding Of Yorkshire </a></li>
+                                    <li style="display: none;"><a href="/property/North-Yorkshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">North Yorkshire </a></li>
+                                    <li style="display: none;"><a href="/property/South-Yorkshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">South Yorkshire </a></li>
+                                    <li style="display: none;"><a href="/property/West-Yorkshire.html/svr/1707;jsessionid=84EA1DDDB0867D8BA1F39DF0C310BB51">West Yorkshire </a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section BodyDescription{
+    This example displays a map image with highlight areas as additional images overlayed. There is an additional text menu with nested sublist. Both elements are combined so the map is highlighed when hovering over a corresponding text item. This code was taken from the RightMove website but has been modified somewhat in the development work I did. The script code is all custom written.
+}
+
+@section Path{
+    ~/Views/Pages/ImageLinks.cshtml
+}
+
+@section Client{
+    <a href="#">TLIF</a>
+}
+
+@section Date{
+    September 2017
+}
+
+@section Dependencies{
+    <br />
+    CSS<br />
+    <a href="~/css/drilldown.css" download>drilldown.css</a><br />
+    Images<br />
+    <a href="~/images/drilldownmenuline.gif" download>drilldownmenuline.gif</a><br />
+    <a href="~/images/ha-side.gif" download>drilldownmenuline.gif</a><br />
+    <a href="~/images/EnglandRegions.png" download>EnglandRegions.png</a><br />
+    <a href="~/images/EastMidlands.png" download>EastMidlands.png</a><br />
+    <a href="~/images/EastofEngland.png" download>EastofEngland.png</a><br />
+    <a href="~/images/London.png" download>London.png</a><br />
+    <a href="~/images/NorthEast.png" download>NorthEast.png</a><br />
+    <a href="~/images/NorthWest.png" download>NorthWest.png</a><br />
+    <a href="~/images/SouthEast.png" download>SouthEast.png</a><br />
+    <a href="~/images/SouthWest.png" download>SouthWest.png</a><br />
+    <a href="~/images/WestMidlands.png" download>WestMidlands.png</a><br />
+    <a href="~/images/YorkshireandtheHumber.png" download>YorkshireandtheHumber.png</a><br />
+}
+
+@section Scripts{
+    <script>
+        //$('#regionMapEnglandRegions area:eq(0)').click(function () {
+        //    alert('regionMapEnglandRegions was clicked');
+        //});
+
+        $('#regionMapEnglandRegions area:eq(0)' && '.highlightMapRegionEastMidlands').hover(
+            function () {
+                $('#EastMidlandsHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#EastMidlandsHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(1)' && '.highlightMapRegionEastofEngland').hover(
+            function () {
+                $('#EastofEnglandHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#EastofEnglandHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(2)' && '.highlightMapRegionLondon').hover(
+            function () {
+                $('#LondonHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#LondonHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(3)' && '.highlightMapRegionNorthEast').hover(
+            function () {
+                $('#NorthEastHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#NorthEastHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(4)' && '.highlightMapRegionNorthWest').hover(
+            function () {
+                $('#NorthWestHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#NorthWestHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(5)' && '.highlightMapRegionSouthEast').hover(
+            function () {
+                $('#SouthEastHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#SouthEastHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(6)' && '.highlightMapRegionSouthWest').hover(
+            function () {
+                $('#SouthWestHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#SouthWestHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(7)' && '.highlightMapRegionWestMidlands').hover(
+            function () {
+                $('#WestMidlandsHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#WestMidlandsHoverover').css("visibility", "hidden");
+            }
+        );
+
+        $('#regionMapEnglandRegions area:eq(8)' && '.highlightMapRegionYorkshireandtheHumber').hover(
+            function () {
+                $('#YorkshireandtheHumberHoverover').css("visibility", "visible");
+            },
+            function () {
+                $('#YorkshireandtheHumberHoverover').css("visibility", "hidden");
+            }
+        );
+
+        function removeOpenMenu(theThis) {
+            //if (theThis.parent().parent().attr('id') != 'regionMapEnglandRegions') {
+            if (theThis.attr('id').indexOf('sidemenu') != -1) {
+
+                hmrs = [
+                    ".highlightMapRegionEastMidlands",
+                    ".highlightMapRegionEastofEngland",
+                    ".highlightMapRegionLondon",
+                    ".highlightMapRegionNorthEast",
+                    ".highlightMapRegionNorthWest",
+                    ".highlightMapRegionSouthEast",
+                    ".highlightMapRegionSouthWest",
+                    ".highlightMapRegionWestMidlands",
+                    ".highlightMapRegionYorkshireandtheHumber"
+                ];
+
+                for (i = 0; i < hmrs.length; i++) {
+                    $('' + hmrs[i]).find('a').removeClass("open");
+                    $('' + hmrs[i]).find('a').addClass("closed");
+                    $('' + hmrs[i]).find('ul').css({ height: "0px" });
+                    $('' + hmrs[i]).find('ul').find('li').css({ display: "none" });
+                }
+            }
+        }
+
+        function addOpenMenu(theThis) {
+            theThis.find('a').first().removeClass("closed");
+            theThis.find('a').first().addClass("open");
+            theThis.find('ul').first().css({ height: "auto" });
+            theThis.find('ul').find('li').css({ display: "list-item" });
+        }
+
+        $('.highlightMapRegionEastMidlands').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionEastofEngland').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionLondon').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionNorthEast').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionNorthWest').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionSouthEast').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionSouthWest').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionWestMidlands').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+
+        $('.highlightMapRegionYorkshireandtheHumber').hover(function () {
+            removeOpenMenu($(this));
+            addOpenMenu($(this));
+        }, function () { });
+    </script>
+}
