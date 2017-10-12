@@ -5,7 +5,8 @@
 .fa {
     font-size: smaller;
     position: relative;
-    bottom: 2px;
+    bottom: 1.75px;
+    font-weight: bold;
 }
 
 .caption-content .fa {

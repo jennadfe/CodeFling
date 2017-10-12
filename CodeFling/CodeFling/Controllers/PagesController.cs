@@ -25,5 +25,10 @@ namespace CodeFling.Controllers
             return View();
         }
 
+        public ActionResult RandomAnimatedColours()
+        {
+            return View();
+        }
+
     }
 }

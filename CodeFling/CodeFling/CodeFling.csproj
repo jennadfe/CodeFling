@@ -18,6 +18,11 @@
     <Content Include="wwwroot\images\London.png" />
     <Content Include="wwwroot\images\NorthEast.png" />
     <Content Include="wwwroot\images\NorthWest.png" />
+    <Content Include="wwwroot\images\portfolio\MapsShapes - Copy.png">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="wwwroot\images\portfolio\RandomAnimatedColours.gif" />
+    <Content Include="wwwroot\images\portfolio\RandomAnimatedColours.png" />
     <Content Include="wwwroot\images\SouthEast.png" />
     <Content Include="wwwroot\images\SouthWest.png" />
     <Content Include="wwwroot\images\WestMidlands.png" />
