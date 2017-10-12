@@ -85,7 +85,7 @@
     padding: 0 .4em;
     border: 1px solid #fff;
     text-decoration: none;
-    white-space: nowrap
+    #333333-space: nowrap
 }
 
 .drilldowncontainer a:hover.label {
@@ -101,7 +101,7 @@
     z-index: 2;
     background: url('../images/drilldownmenuline.gif') left top no-repeat;
     padding-top: 6px;
-    white-space: nowrap
+    #333333-space: nowrap
 }
 
 .drilldowncontainer .maplabelpopup .popuptier2 {
@@ -776,7 +776,7 @@ body.landingpage #searchheader.commercial p.propertySearchExample {
     .commercialchannels p {
         font-size: 1.1em;
         margin: 0 1em 0 0;
-        white-space: nowrap
+        #333333-space: nowrap
     }
 
 .commercialinline {
@@ -2320,7 +2320,7 @@ html {
     .helpinfoclass h4 {
         font-size: 1em;
         clear: none;
-        white-space: normal;
+        #333333-space: normal;
         top: -30px;
         position: relative
     }
@@ -2329,7 +2329,7 @@ html {
         font-size: .9em;
         background-color: #FFF;
         margin-bottom: 0;
-        white-space: normal;
+        #333333-space: normal;
         top: -30px;
         position: relative;
         width: 100%
@@ -2450,7 +2450,7 @@ html {
 }
 
 .map-popup .soldtenure, .map-popup .soldtype {
-    white-space: nowrap
+    #333333-space: nowrap
 }
 
 #popup-wrapper {
@@ -3165,7 +3165,7 @@ body.report #sellersPriceGuideHeader #housePricesSearchCriteria .inputset label 
     border-right: 2px solid #eee;
     border-bottom: 2px solid #eee;
     border-left: 1px solid #dedede;
-    background-color: white;
+    background-color: #333333;
     overflow: hidden;
     z-index: 99999;
     margin-top: 5px;
@@ -3203,7 +3203,7 @@ body.report #sellersPriceGuideHeader #housePricesSearchCriteria .inputset label 
     }
 
 .ac_results li.ac_loading {
-    background: white
+    background: #333333
 }
 
 .more {
@@ -3553,7 +3553,7 @@ form.dyarenameform {
 #dyavertexmenu, #dyamousehint {
     position: absolute;
     padding: .5em;
-    background-color: white
+    background-color: #333333
 }
 
 #dyavertexmenu {
@@ -3563,7 +3563,7 @@ form.dyarenameform {
 #dyamousehint {
     display: none;
     width: auto;
-    white-space: nowrap;
+    #333333-space: nowrap;
     padding: .1em .3em;
     color: #666;
     z-index: 1000;

@@ -1,4 +1,8 @@
-﻿.fa {
+﻿body {
+    color: #333333;
+}
+
+.fa {
     font-size: smaller;
     position: relative;
     bottom: 2px;
@@ -17,8 +21,8 @@
 }
 
 .colourBorder {
-    background-color: #ffbbdf;
+    background-color: #fde4f2;
     padding: 10px;
     text-align: center;
-    border: 3px solid #ffbbdf;
+    border: 3px solid #fde4f2;
 }
