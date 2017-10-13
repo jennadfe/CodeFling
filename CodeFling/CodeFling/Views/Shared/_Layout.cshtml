@@ -243,10 +243,10 @@
                     if (blue < 0) { blue = 0; $(this).removeClass('goingDown'); $(this).addClass('goingUp') }
 
                     $(this).css('background-color', 'rgba(' + red + ',' + green + ',' + blue + ', 0.25)');
-                    $(this).outerHTML = '<div>background-color', 'rgba(' + red + ',' + green + ',' + blue + ', 0.25)</div>';
+                    $(this).innerHTML = '<div>background-color', 'rgba(' + red + ',' + green + ',' + blue + ', 0.25)</div>';
                 });
             },
-            1  /* 1000 ms = 1 sec */
+            7  /* 1000 ms = 1 sec */
         );
     </script>
 </body>
