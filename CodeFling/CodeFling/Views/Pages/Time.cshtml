@@ -1,0 +1,179 @@
+﻿@section CSS{
+    <style>
+        .segmentContainer {
+            position: relative;
+            border: 1px solid #cecece;
+            width: 100%;
+            height: 200px;
+            background-color: rgba(255, 187, 223, 0.25)
+        }
+
+        .segmentText {
+            font-size: 30px;
+            background-color: rgba(255,255,255,0.20);
+            /*padding: 4px 53px;*/
+            width: 142px;
+            left: 0;
+            /*top: -8px;*/
+            /*margin: 0 auto;*/
+            height: 46px;
+        }
+
+        .textOnHorizon {
+            position: absolute;
+            margin-top: -47px;
+            -moz-transition: margin-top 0.3s ease;
+            -o-transition: margin-top 0.3s ease;
+            -webkit-transition: margin-top 0.3s ease;
+            transition: margin-top 0.3s ease;
+        }
+
+        .textUnderHorizon {
+            position: absolute;
+            padding: 4px 53px;
+            width: 142px;
+            left: 0;
+            top: 0;
+            margin: 0 auto;
+            -moz-transition: margin-top 0.3s ease;
+            -o-transition: margin-top 0.3s ease;
+            -webkit-transition: margin-top 0.3s ease;
+            transition: margin-top 0.3s ease;
+        }
+
+        #hoursDisplay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #b6b6b6;
+        }
+
+        #minutesDisplay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #b6b6b6;
+        }
+
+        #secondsDisplay {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            border-top: 1px solid #b6b6b6;
+        }
+    </style>
+}
+
+@section Title{
+    <h2>Time</h2>
+}
+
+@section BodyContent {
+    <span id="clock"></span><br />
+
+    <div class="row" style="background-color:white;padding:15px 0;margin:10px;">
+        <div class="col-md-4">
+            <div class="segmentContainer">
+                <div id="hoursDisplay">
+                    <span id="hours" class="segmentText"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="segmentContainer">
+                <div id="minutesDisplay">
+                    <span id="minutes" class="segmentText"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="segmentContainer">
+                <div id="secondsDisplay">
+                    <span id="seconds" class="segmentText"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+@section BodyDescription{
+    This example displays an animated clock on screen using JavaScript. The original code came from the Stackoverflow question - <a href="https://stackoverflow.com/questions/28415178/how-do-you-show-the-current-time-on-a-web-page">how-do-you-show-the-current-time-on-a-web-page</a>. The process here could be manipulated for custom progress bars, indicators to show number of results from a search etc. An additional nice feature is the adding and removing of position classes to keep the number display within the bounds of the graph bars.
+}
+
+@section Path{
+    ~/Views/Pages/Time.cshtml
+}
+
+@section Client{
+    <a href="#">Personal</a>
+}
+
+@section Date{
+    October 2017
+}
+
+@section Dependencies{
+    JavaScript, jQuery
+}
+
+@section Scripts{
+    <script>
+        (function () {
+            var clockElement = document.getElementById("clock");
+            var hoursElement = document.getElementById("hours");
+            var minutesElement = document.getElementById("minutes");
+            var secondsElement = document.getElementById("seconds");
+
+            function updateClock(clock) {
+                clock.innerHTML = new Date().toLocaleTimeString();
+                var theHours = new Date().getHours();
+                var theMinutes = new Date().getMinutes();
+                var theSeconds = new Date().getSeconds();
+                hours.innerHTML = theHours;
+                minutes.innerHTML = theMinutes;
+                seconds.innerHTML = theSeconds;
+                if (theHours < 12) {
+                    $('#hoursDisplay').find('span').removeClass('textUnderHorizon');
+                    $('#hoursDisplay').find('span').addClass('textOnHorizon');
+                } else {
+                    $('#hoursDisplay').find('span').removeClass('textOnHorizon');
+                    $('#hoursDisplay').find('span').addClass('textUnderHorizon');
+                }
+                $('#hoursDisplay').css({
+                    'height': '' + ((new Date().getHours() / 24) * 200),
+                    'background-color': 'rgba(255, 187, 223, ' + (theHours / 24) * 1.0
+                });
+                if (theMinutes < 30) {
+                    $('#minutesDisplay').find('span').removeClass('textUnderHorizon');
+                    $('#minutesDisplay').find('span').addClass('textOnHorizon');
+                } else {
+                    $('#minutesDisplay').find('span').removeClass('textOnHorizon');
+                    $('#minutesDisplay').find('span').addClass('textUnderHorizon');
+                }
+                $('#minutesDisplay').css({
+                    'height': ((new Date().getMinutes() / 60) * 200),
+                    'background-color': 'rgba(255, 187, 223, ' + (theMinutes / 60) * 1.0
+                });
+                if (theSeconds < 30) {
+                    $('#secondsDisplay').find('span').removeClass('textUnderHorizon');
+                    $('#secondsDisplay').find('span').addClass('textOnHorizon');
+                } else {
+                    $('#secondsDisplay').find('span').removeClass('textOnHorizon');
+                    $('#secondsDisplay').find('span').addClass('textUnderHorizon');
+                }
+                $('#secondsDisplay').css({
+                    'height': ((new Date().getSeconds() / 60) * 200),
+                    'background-color': 'rgba(255, 187, 223, ' + (theSeconds / 60) * 1.0
+                });
+            }
+
+            setInterval(function () {
+                updateClock(clockElement);
+                updateClock(hoursElement);
+                updateClock(minutesElement);
+                updateClock(secondsElement);
+            }, 1000);
+
+        }());
+    </script>
+}

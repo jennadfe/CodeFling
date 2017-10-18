@@ -30,5 +30,20 @@ namespace CodeFling.Controllers
             return View();
         }
 
+        public ActionResult ColourPicker()
+        {
+            return View();
+        }
+
+        public ActionResult BackToTheTop()
+        {
+            return View();
+        }
+
+        public ActionResult Time()
+        {
+            return View();
+        }
+
     }
 }

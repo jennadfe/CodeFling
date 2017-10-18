@@ -20,6 +20,10 @@
     <!-- Custom styles for this template -->
     <link href="~/css/freelancer.css" rel="stylesheet" />
     <link href="~/css/site.css" rel="stylesheet" />
+
+    <!-- jQuery load at top for compatability -->
+    <script src="~/vendor/jquery/jquery.min.js"></script>
+
 </head>
 <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">@*Intentionally Blank*@</nav>
@@ -43,7 +47,7 @@
                                         @RenderSection("BodyContent", false)
                                     </div>
                                     <div class="spacer25"></div>
-                                    <p>
+                                    <p style="text-align: justify;">
                                         @RenderSection("BodyDescription", false)
                                     </p>
                                     <ul class="list-inline item-details">
@@ -85,7 +89,6 @@
             </div>
         </div>
         <!-- Bootstrap core JavaScript -->
-        <script src="~/vendor/jquery/jquery.min.js"></script>
         <script src="~/vendor/popper/popper.min.js"></script>
         <script src="~/vendor/bootstrap/js/bootstrap.min.js"></script>
 

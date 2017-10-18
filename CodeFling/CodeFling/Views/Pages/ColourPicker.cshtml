@@ -1,0 +1,180 @@
+﻿@section CSS{
+    <style>
+        #RainbowContainer {
+            background-color: #eaeaea;
+            max-width: 530px;
+            padding: 10px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        #selected {
+            margin-bottom: 3px;
+        }
+
+            #selected .labelBox {
+                width: 168px;
+            }
+
+            #selected .colorContainer {
+                position: relative;
+                float: left;
+                margin-right: 2px;
+                margin-bottom: 3px;
+            }
+
+            #selected .colorBox {
+                height: 150px;
+                width: 168px;
+            }
+
+        .colorContainer {
+            position: relative;
+            float: left;
+            margin-right: 2px;
+            margin-bottom: 3px;
+        }
+
+        .labelBox {
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+
+        .colorBox {
+            height: 50px;
+            width: 100px;
+        }
+
+        .slideIn {
+            animation-name: fadeInOpacity;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+        }
+
+        #selected .slideIn {
+            animation-name: fadeInOpacity;
+            animation-duration: 0.5s;
+            animation-timing-function: ease-out;
+        }
+
+        @@keyframes fadeInOpacity {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            overflow: hidden;
+        }
+    </style>
+}
+
+@section Title{
+    <h2>Colour Picker</h2>
+}
+
+@section BodyContent {
+
+    <div id="RainbowContainer">
+        <h5>
+            Be a
+            <span style="color:red">r</span><span style="color:orange">a</span><span style="color:yellow">i</span><span style="color:green">n</span><span style="color:blue">b</span><span style="color:violet">o</span><span style="color:purple">w</span> in someone else's cloud
+        </h5>
+
+        @{
+            Random rnd = new Random();
+            var theHex = "#";
+            int numColours = 25;
+
+            <div id="selected"></div>
+            <div class="clearfix"></div>
+
+            for (int i = 0; i < numColours; i++)
+            {
+                theHex = "#";
+                string[] theValues = new string[] { "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f" };
+                for (int j = 0; j < 6; j++)
+                {
+                    theHex += theValues[rnd.Next(0, theValues.Length)];
+                }
+                <div onclick="SelectColour(this)" style="cursor: pointer;">
+                    <div class="colorContainer">
+                        <div class="labelBox">
+                            <label>@theHex</label>
+                        </div>
+                        <div class="colorBox" style="background-color: @theHex"></div>
+                    </div>
+                </div>
+            }
+
+            for (int i = 0; i < numColours; i++)
+            {
+                <script>
+                    $(function () {
+                        $('.colorContainer').each(function (i) {
+                            var row = $(this);
+                            setTimeout(function () {
+                                row.toggleClass('slideIn');
+                            }, 10 * i);
+                        });
+                    });
+                </script>
+            }
+
+            <button id="resetColours">Reset</button>
+
+            <script>
+                    function SelectColour(input) {
+                        var theHTML = document.getElementById("selected").innerHTML;
+                        var numSelected = document.getElementById("selected").childElementCount
+                        if (numSelected < 3) {
+                            document.getElementById("selected").innerHTML = theHTML + input.innerHTML.replace("<div class=\"colorContainer", "<div onclick=\"RemoveSelection(this)\" style=\"cursor: pointer;\" class=\"colorContainer");
+                        }
+                    }
+
+                    function RemoveSelection(input) {
+                        var theHTML = document.getElementById("selected").innerHTML;
+                        document.getElementById("selected").innerHTML = theHTML.replace(input.outerHTML, "");
+                    }
+
+                    $('#resetColours').click(function () {
+                        location.reload();
+                    });
+
+            </script>
+        }
+        <div class="clearfix"></div>
+    </div>
+}
+
+@section BodyDescription{
+    This example uses jQuery and Razor to generate a random selection of colours and their corresponding colour codes. The user can click on a colour and it will be selected and shown above the options. Additionally, clicki8ng on a selected colour removes it from the list. A maximum of three colours can be selected. This example demonstrates inserting code.
+}
+
+@section Path{
+    ~/Views/Pages/ColourPicker.cshtml
+}
+
+@section Client{
+    <a href="#">Personal</a>
+}
+
+@section Date{
+    October 2017
+}
+
+@section Dependencies{
+    jQuery, Razor
+}
+
+@section Scripts{
+
+}
